@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:09:25:47 +0100] "GET /Projet/html_css/accueil.jsp HTTP/1.1" 404 1059
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:09:26:02 +0100] "GET /Projet/html_css/index.jsp HTTP/1.1" 404 1055
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:09:26:09 +0100] "GET /TweetBook/html_css/index.jsp HTTP/1.1" 200 2042
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:09:26:09 +0100] "GET /TweetBook/html_css/style.css HTTP/1.1" 200 2740
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:09:26:09 +0100] "GET /TweetBook/html_css/main.js HTTP/1.1" 200 2999
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:10:30:35 +0100] "GET /TweetBook/html_css/index.jsp HTTP/1.1" 200 1863
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:10:30:35 +0100] "GET /TweetBook/html_css/style.css HTTP/1.1" 200 2740
+0:0:0:0:0:0:0:1 - - [24/Jan/2018:10:30:36 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
