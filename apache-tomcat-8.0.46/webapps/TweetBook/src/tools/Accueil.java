@@ -21,7 +21,7 @@ public class Accueil extends HttpServlet {
 			
 			Context initCtx = new InitialContext();
 			Context envCtx = (Context) initCtx.lookup("java:comp/env");
-			DataSource ds = (DataSource) envCtx.lookup("mabase");
+			DataSource ds = (DataSource) envCtx.lookup("da2i");
 			Connection con = ds.getConnection();
 			
 		}catch(Exception e){
