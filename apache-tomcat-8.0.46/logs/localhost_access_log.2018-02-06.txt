@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [06/Feb/2018:12:46:21 +0100] "GET /TweetBook/WebContent/jsp/accueil.jsp HTTP/1.1" 200 240
+0:0:0:0:0:0:0:1 - - [06/Feb/2018:12:46:37 +0100] "GET /TweetBook/jsp/accueil.jsp HTTP/1.1" 404 1055

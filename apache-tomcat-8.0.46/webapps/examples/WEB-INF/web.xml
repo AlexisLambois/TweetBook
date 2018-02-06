@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one or more
   contributor license agreements.  See the NOTICE file distributed with
@@ -115,15 +115,16 @@
         <listener-class>listeners.SessionListener</listener-class>
     </listener>
 
+    <!-- Define listeners required by examples -->
+    <listener>
+        <listener-class>async.AsyncStockContextListener</listener-class>
+    </listener>
+
     <!-- Define servlets that are included in the example application -->
 
     <servlet>
       <servlet-name>ServletToJsp</servlet-name>
       <servlet-class>ServletToJsp</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ChatServlet</servlet-name>
-        <servlet-class>chat.ChatServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CompressionFilterTestServlet</servlet-name>
@@ -154,10 +155,6 @@
         <servlet-class>SessionExample</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>ChatServlet</servlet-name>
-        <url-pattern>/servlets/chat/chat</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CompressionFilterTestServlet</servlet-name>
         <url-pattern>/CompressionTest</url-pattern>

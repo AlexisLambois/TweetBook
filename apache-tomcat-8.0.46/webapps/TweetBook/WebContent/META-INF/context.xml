@@ -1,11 +1,10 @@
-<Context path="/TweetBook" docBase="TweetBook" debug="99">
+<Context path="/TweetBook" privileged="true" reloadable="true"  debug="99">
 
   <!-- Definition du pool -->
-
   <Resource name="mabase" auth="Container" type="javax.sql.DataSource"
-  maxActive="4" maxIdle="4" maxWaitMillis="10000"
+  maxActive="5" maxIdle="4" maxWait="10000"
   username="lamboisa" password="moi" driverClassName="org.postgresql.Driver"
-  url="jdbc:postgresql://psqlserv/da2i"/>
+  url="jdbc:postgresql://psqlserv/da2i" />
 
   <!-- Definition du Realm sans pool -->
 
@@ -17,8 +16,7 @@
                    userRoleTable="user_roles" roleNameCol="role_name"/>
 
 
-
-<!-- Definition du Realm via le pool -->
+  <!-- Definition du Realm via le pool -->
 
 <!--
    <Realm  className="org.apache.catalina.realm.DataSourceRealm" debug="99"

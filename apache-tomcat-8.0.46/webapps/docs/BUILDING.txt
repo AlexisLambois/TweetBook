@@ -16,12 +16,12 @@
 ================================================================================
 
             ====================================================
-            Building The Apache Tomcat 8.0 Servlet/JSP Container
+            Building The Apache Tomcat 8.5 Servlet/JSP Container
             ====================================================
 
-This subproject contains the source code for Tomcat 8.0, a container that
-implements the Servlet 3.1, JSP 2.3, EL 3.0 and WebSocket 1.1 specifications
-from the Java Community Process <http://www.jcp.org/>.
+This subproject contains the source code for Tomcat 8.5, a container that
+implements the Servlet 3.1, JSP 2.3, EL 3.0, WebSocket 1.1 and JASPIC 1.1
+specifications from the Java Community Process <http://www.jcp.org/>.
 
 Note: If you just need to run Apache Tomcat, it is not necessary to build
 it. You may simply download a binary distribution. It is cross-platform.
@@ -89,9 +89,9 @@ source distribution, do the following:
     available, which will be used to actually perform the build.
 
 
-(3) Building Tomcat 8.0
+(3) Building Tomcat 8.5
 
-(3.1) Checkout or obtain the source code for Tomcat 8.0
+(3.1) Checkout or obtain the source code for Tomcat 8.5
 
 Checkout the source using SVN, selecting a tag for released version or
 trunk for the current development code, or download and unpack a source
@@ -99,7 +99,7 @@ package.
 
  *  Tomcat SVN repository URL:
 
-        http://svn.apache.org/repos/asf/tomcat/tc8.0.x/trunk/
+        http://svn.apache.org/repos/asf/tomcat/tc8.5.x/trunk/
 
  *  Source packages can be downloaded from:
 
@@ -183,7 +183,7 @@ each release package has the appropriate line-endings.
 
 (4) Updating sources and rebuilding
 
-It is recommended that you regularly update the downloaded Tomcat 8.0
+It is recommended that you regularly update the downloaded Tomcat 8.5
 sources using your SVN client.
 
 For a quick rebuild of only modified code you can use:
@@ -330,15 +330,14 @@ directory:
 
     output/build/logs
 
-By default the testsuite is run four times to test 4 different
-implementations of Tomcat connectors: BIO, NIO, NIO2 and APR. (If you are not
+By default the testsuite is run three times to test 3 different
+implementations of Tomcat connectors: NIO, NIO2 and APR. (If you are not
 familiar with Tomcat connectors, see config/http.html in documentation for
 details).
 
-The 4 runs are enabled and disabled individually by the following
+The 3 runs are enabled and disabled individually by the following
 properties, which all are "true" by default:
 
-    execute.test.bio=true
     execute.test.nio=true
     execute.test.nio2=true
     execute.test.apr=true
