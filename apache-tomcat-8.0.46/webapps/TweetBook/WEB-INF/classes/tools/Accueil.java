@@ -12,7 +12,7 @@ import javax.sql.DataSource;
  * Servlet implementation class Accueil
  **/
 
-@WebServlet("/accueil")
+@WebServlet("/servlet/accueil")
 public class Accueil extends HttpServlet {
 
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
@@ -23,7 +23,7 @@ public class Accueil extends HttpServlet {
 			Context envCtx = (Context) initCtx.lookup("java:comp/env");
 			DataSource ds = (DataSource) envCtx.lookup("da2i");
 			Connection con = ds.getConnection();
-			
+			System.out.println("est");
 		}catch(Exception e){
 			e.printStackTrace();
 		}

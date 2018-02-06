@@ -7,6 +7,6 @@
 <title>TweetBook</title>
 </head>
 <body>
-	<a href="./../accueil">Accueil</a>
+	<a href=".././servlet/accueil">Accueil</a>
 </body>
 </html>
