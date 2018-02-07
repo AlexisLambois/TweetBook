@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TweetBook</title>
-<link rel="stylesheet" type="text/css" href="../css/accueil.css">
+<link rel="stylesheet" type="text/css" href="../css/connec_inscrp.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 </head>
@@ -87,6 +87,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="../js/accueil.js"></script>
+	<script src="../js/connec_inscrp.js"></script>
 </body>
 </html>

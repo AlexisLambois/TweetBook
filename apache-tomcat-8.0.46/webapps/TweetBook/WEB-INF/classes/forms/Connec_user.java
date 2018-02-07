@@ -24,6 +24,7 @@ public class Connec_user extends HttpServlet {
 		Connection con = null;
 		PreparedStatement pst;
 		ResultSet rs;
+		HttpSession session = req.getSession();
 		
 		try{
 
@@ -37,13 +38,14 @@ public class Connec_user extends HttpServlet {
 			pst.setString(2, req.getParameter("password"));
 			rs = pst.executeQuery();
 			
-			if (rs.next()) {
+			if ( !rs.next()) {
 				
-				
+				session.setAttribute("login", req.getParameter("login"));
+				res.sendRedirect("../jsp/connec_inscrp.jsp");
 	
 			}else{
 				
-				res.sendRedirect("../jsp/accueil.jsp?error=3");
+				res.sendRedirect("../jsp/connec_inscrp.jsp?error=3");
 				
 			}
 			

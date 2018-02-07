@@ -9,7 +9,7 @@ CREATE TABLE comptes(
  	nom text NOT NULL,
  	prenom text NOT NULL,
  	naissance date,
- 	email text UNIQUE,
+ 	email text NOT NULL UNIQUE,
  	photo text,
  	visibilite_mur int DEFAULT 0 CHECK( visibilite_mur BETWEEN 0 AND 2 ),
  	CONSTRAINT PK_comptes PRIMARY KEY (login) 
@@ -38,17 +38,19 @@ CREATE TABLE actualite(
 CREATE TABLE liked(
  	liker_par text,
  	actualite int,
+ 	statut int CHECK( statut BETWEEN 0 AND 1 ) NOT NULL,
  	CONSTRAINT PK_liked PRIMARY KEY (liker_par,actualite),
  	CONSTRAINT FK_comptes FOREIGN KEY (liker_par) REFERENCES comptes(login),
  	CONSTRAINT FK_actualite FOREIGN KEY (actualite) REFERENCES actualite(ano)
 );
- 
-INSERT INTO comptes(login,password,nom,prenom) VALUES('titi','123','Phillipe','Mathieu');
-INSERT INTO comptes(login,password,nom,prenom) VALUES('tata','123','Hauspie','Michael');
+
+INSERT INTO comptes(login,password,nom,prenom,email) VALUES('toto','123','Phillipe','Mathieu','test');
+INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Phillipe','Mathieu','test1');
+INSERT INTO comptes(login,password,nom,prenom,email) VALUES('tata','123','Hauspie','Michael','test2');
 INSERT INTO amis VALUES('toto','titi','20181015 12:00:00'::timestamp);
 INSERT INTO amis VALUES('titi','tata','20181015 15:00:00'::timestamp);
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('toto est amis avec titi','20181015 12:00:00'::timestamp,'toto');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec tata','20181015 15:00:00'::timestamp,'titi');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec toto','20181015 12:00:00'::timestamp,'titi');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('tata est amis avec titi','20181015 15:00:00'::timestamp,'tata');
-INSERT INTO liked VALUES('tata',1);
+INSERT INTO liked VALUES('tata',1,0);
