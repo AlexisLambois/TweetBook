@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+
+  <!-- Definition du pool -->
+  <Resource auth="Container" driverClassName="org.sqlite.JDBC" maxTotal="4" maxIdle="2" maxWaitMillis="10000" name="mabase" password="philippe" type="javax.sql.DataSource" url="jdbc:sqlite:/tmp/mabase.db" username="mathieu"/>
+
+  <!-- Definition du Realm sans pool -->
+  <Realm className="org.apache.catalina.realm.JDBCRealm" connectionName="mathieu" connectionPassword="philippe" connectionURL="jdbc:sqlite:/tmp/mabase.db" driverName="org.sqlite.JDBC" roleNameCol="role_name" userCredCol="user_pass" userNameCol="user_name" userRoleTable="user_roles" userTable="users"/>
+
+  <!-- Definition du Realm via le pool -->
+  <!--
+   <Realm  className="org.apache.catalina.realm.DataSourceRealm"
+           dataSourceName="mabase" localDataSource="true"
+           userTable="users" userNameCol="user_name" userCredCol="user_pass"
+           userRoleTable="user_roles" roleNameCol="role_name"  />
+-->
+
+  <!-- Definition d'une valve d'acces -->
+  <Valve className="org.apache.catalina.valves.AccessLogValve" pattern="common" prefix="vide_evolue_access1." suffix=".txt"/>
+</Context>

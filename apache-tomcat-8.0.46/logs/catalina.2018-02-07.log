@@ -1814,3 +1814,978 @@ Caused by: org.apache.catalina.LifecycleException: Aucun composant base de donnÃ
 07-Feb-2018 11:57:38.473 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
 07-Feb-2018 11:57:38.474 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
 07-Feb-2018 11:57:38.474 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:05:30.699 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:05:30.801 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:05:30.805 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:05:30.805 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:05:30.806 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:05:30.806 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:05:30.807 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:05:30.808 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:05:30.808 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:05:30.809 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:05:30.809 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:05:30.810 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:05:30.810 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:05:30.811 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:05:30.811 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:05:30.812 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:05:30.813 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:05:30.821 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:05:30.822 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:05:30.822 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:05:32.317 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:05:32.811 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:05:32.813 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:05:32.815 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:05:32.815 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3222 ms
+07-Feb-2018 14:05:32.940 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:05:32.941 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:05:32.953 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:05:33.485 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 507 ms
+07-Feb-2018 14:05:33.485 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:05:33.900 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:05:33.901 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:05:33.954 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 469 ms
+07-Feb-2018 14:05:33.954 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:05:33.984 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 30 ms
+07-Feb-2018 14:05:33.984 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:05:34.006 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 21 ms
+07-Feb-2018 14:05:34.006 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:05:34.020 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 14 ms
+07-Feb-2018 14:05:34.021 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:05:34.024 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:05:34.063 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:05:34.063 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:05:34.084 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 63 ms
+07-Feb-2018 14:05:34.088 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:05:34.096 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:05:34.099 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 1283 ms
+07-Feb-2018 14:07:34.199 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/TweetBook]
+07-Feb-2018 14:07:34.199 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TweetBook] a démarré
+07-Feb-2018 14:07:34.244 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Feb-2018 14:08:12.146 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:08:12.252 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:08:12.304 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:08:12.360 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:08:12.385 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:08:12.386 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:08:12.387 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:08:21.385 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:08:21.387 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:08:21.387 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:08:21.387 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:08:21.387 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:08:21.388 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:08:21.389 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:08:21.390 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:08:21.390 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:08:21.390 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:08:21.493 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:08:21.641 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:08:21.643 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:08:21.650 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:08:21.650 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 520 ms
+07-Feb-2018 14:08:21.672 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:08:21.672 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:08:21.681 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:08:21.922 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 240 ms
+07-Feb-2018 14:08:21.922 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:08:22.160 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:08:22.161 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:08:22.167 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 245 ms
+07-Feb-2018 14:08:22.167 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:08:22.196 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 28 ms
+07-Feb-2018 14:08:22.196 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:08:22.218 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 21 ms
+07-Feb-2018 14:08:22.218 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:08:22.233 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 15 ms
+07-Feb-2018 14:08:22.233 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:08:22.237 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:08:22.261 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:08:22.261 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:08:22.274 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 41 ms
+07-Feb-2018 14:08:22.276 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:08:22.284 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:08:22.286 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 635 ms
+07-Feb-2018 14:11:15.002 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:11:15.061 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:11:15.113 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:11:15.166 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:11:15.167 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:11:15.178 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:11:15.179 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:11:18.430 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:11:18.433 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:11:18.433 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:11:18.433 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:11:18.434 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:11:18.435 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:11:18.436 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:11:18.436 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:11:18.436 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:11:18.546 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:11:18.697 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:11:18.700 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:11:18.705 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:11:18.706 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 536 ms
+07-Feb-2018 14:11:18.727 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:11:18.727 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:11:18.735 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:11:18.978 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 242 ms
+07-Feb-2018 14:11:18.978 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:11:19.220 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:11:19.221 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:11:19.227 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 249 ms
+07-Feb-2018 14:11:19.227 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:11:19.255 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 28 ms
+07-Feb-2018 14:11:19.256 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:11:19.278 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 22 ms
+07-Feb-2018 14:11:19.278 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:11:19.293 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 15 ms
+07-Feb-2018 14:11:19.293 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:11:19.297 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:11:19.320 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:11:19.320 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:11:19.334 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 41 ms
+07-Feb-2018 14:11:19.336 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:11:19.343 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:11:19.346 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 639 ms
+07-Feb-2018 14:12:29.383 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:12:29.449 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:12:29.454 AVERTISSEMENT [localhost-startStop-2] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:12:29.486 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 37 ms
+07-Feb-2018 14:12:30.186 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:12:30.245 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:12:30.297 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:12:30.345 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:12:30.346 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:12:30.347 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:12:30.348 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:12:33.543 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:12:33.546 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:12:33.547 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:12:33.547 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:12:33.547 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:12:33.547 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:12:33.547 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:12:33.548 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:12:33.548 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:12:33.548 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:12:33.548 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:12:33.549 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:12:33.549 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:12:33.654 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:12:33.801 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:12:33.804 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:12:33.806 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:12:33.806 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 520 ms
+07-Feb-2018 14:12:33.832 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:12:33.832 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:12:33.840 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:12:34.084 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 243 ms
+07-Feb-2018 14:12:34.084 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:12:34.330 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:12:34.331 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:12:34.338 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 254 ms
+07-Feb-2018 14:12:34.338 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:12:34.365 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 26 ms
+07-Feb-2018 14:12:34.365 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:12:34.387 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 22 ms
+07-Feb-2018 14:12:34.388 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:12:34.402 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 14 ms
+07-Feb-2018 14:12:34.402 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:12:34.406 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:12:34.424 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:12:34.424 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:12:34.443 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 41 ms
+07-Feb-2018 14:12:34.445 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:12:34.452 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:12:34.455 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 648 ms
+07-Feb-2018 14:15:14.362 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:15:14.422 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:15:14.473 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:15:14.527 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:15:14.529 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:15:14.612 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:15:14.614 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:15:17.576 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:15:17.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:15:17.578 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:15:17.579 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:15:17.580 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:15:17.581 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:15:17.581 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:15:17.581 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:15:17.690 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:15:17.834 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:15:17.837 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:15:17.842 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:15:17.843 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 519 ms
+07-Feb-2018 14:15:17.864 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:15:17.864 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:15:17.872 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:15:18.110 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 237 ms
+07-Feb-2018 14:15:18.110 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:15:18.353 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:15:18.353 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:15:18.360 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 250 ms
+07-Feb-2018 14:15:18.360 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:15:18.388 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 28 ms
+07-Feb-2018 14:15:18.388 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:15:18.410 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 22 ms
+07-Feb-2018 14:15:18.410 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:15:18.425 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 15 ms
+07-Feb-2018 14:15:18.425 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:15:18.429 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:15:18.459 GRAVE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 67 column 19: La chaîne "--" n'est pas autorisée dans les commentaires.
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml; lineNumber: 67; columnNumber: 19; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1119)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:783)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:307)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:15:18.460 GRAVE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml; lineNumber: 67; columnNumber: 19; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1119)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:783)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:307)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:15:18.462 GRAVE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 67 column 19
+07-Feb-2018 14:15:18.471 GRAVE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Cette application est marquée comme non disponible suite aux erreurs précédentes
+07-Feb-2018 14:15:18.475 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:15:18.475 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:15:18.482 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+07-Feb-2018 14:15:18.483 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/TweetBook] suite aux erreurs précédentes
+07-Feb-2018 14:15:18.485 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 60 ms
+07-Feb-2018 14:15:18.487 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:15:18.495 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:15:18.498 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 654 ms
+07-Feb-2018 14:16:47.226 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:16:47.285 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:16:47.338 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:16:47.376 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:16:47.446 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:16:47.468 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:16:47.470 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:16:50.537 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:16:50.540 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:16:50.540 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:16:50.540 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:16:50.540 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:16:50.540 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:16:50.541 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:16:50.542 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:16:50.543 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:16:50.543 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:16:50.649 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:16:50.798 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:16:50.801 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:16:50.806 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:16:50.807 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 536 ms
+07-Feb-2018 14:16:50.828 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:16:50.829 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:16:50.836 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:16:51.083 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 246 ms
+07-Feb-2018 14:16:51.083 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:16:51.339 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:16:51.340 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:16:51.346 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 263 ms
+07-Feb-2018 14:16:51.346 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:16:51.373 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 27 ms
+07-Feb-2018 14:16:51.373 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:16:51.395 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 21 ms
+07-Feb-2018 14:16:51.395 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:16:51.409 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 14 ms
+07-Feb-2018 14:16:51.410 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:16:51.413 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:16:51.422 GRAVE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 67 column 19: La chaîne "--" n'est pas autorisée dans les commentaires.
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml; lineNumber: 67; columnNumber: 19; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1119)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:783)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:307)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:16:51.423 GRAVE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Parse error in application web.xml file at file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/WEB-INF/web.xml; lineNumber: 67; columnNumber: 19; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml(WebXmlParser.java:119)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1119)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:783)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:307)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:16:51.424 GRAVE [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXmlParser.parseWebXml Occurred at line 67 column 19
+07-Feb-2018 14:16:51.434 GRAVE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Cette application est marquée comme non disponible suite aux erreurs précédentes
+07-Feb-2018 14:16:51.442 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:16:51.442 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:16:51.451 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+07-Feb-2018 14:16:51.452 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/TweetBook] suite aux erreurs précédentes
+07-Feb-2018 14:16:51.454 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 44 ms
+07-Feb-2018 14:16:51.457 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:16:51.465 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:16:51.468 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 660 ms
+07-Feb-2018 14:17:30.713 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:17:30.773 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:17:30.825 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:17:30.864 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:17:30.867 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:17:30.869 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:17:30.870 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:17:33.402 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:17:33.404 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:17:33.404 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:17:33.404 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:17:33.405 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:17:33.406 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:17:33.407 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:17:33.407 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:17:33.407 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:17:33.407 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:17:33.511 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:17:33.655 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:17:33.658 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:17:33.663 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:17:33.663 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 513 ms
+07-Feb-2018 14:17:33.684 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:17:33.684 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:17:33.691 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:17:33.928 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 236 ms
+07-Feb-2018 14:17:33.928 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:17:34.162 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:17:34.163 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:17:34.169 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 241 ms
+07-Feb-2018 14:17:34.169 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:17:34.195 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 26 ms
+07-Feb-2018 14:17:34.196 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:17:34.216 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 20 ms
+07-Feb-2018 14:17:34.216 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:17:34.230 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 14 ms
+07-Feb-2018 14:17:34.231 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:17:34.234 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:17:34.257 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:17:34.257 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:17:34.270 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 39 ms
+07-Feb-2018 14:17:34.272 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:17:34.279 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:17:34.282 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 618 ms
+07-Feb-2018 14:19:24.347 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:19:24.385 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:19:24.387 GRAVE [localhost-startStop-2] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 16 column 7: La chaîne "--" n'est pas autorisée dans les commentaires.
+ org.xml.sax.SAXParseException; systemId: file://C/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/META-INF/context.xml; lineNumber: 16; columnNumber: 7; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1430)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1085)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:19:24.388 GRAVE [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Erreur lors du déploiement du descripteur de configuration C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook\META-INF\context.xml
+ org.xml.sax.SAXParseException; systemId: file://C/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/META-INF/context.xml; lineNumber: 16; columnNumber: 7; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1430)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1085)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:19:24.395 GRAVE [localhost-startStop-2] org.apache.tomcat.util.digester.Digester.fatalError Parse Fatal Error at line 16 column 7: La chaîne "--" n'est pas autorisée dans les commentaires.
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/META-INF/context.xml; lineNumber: 16; columnNumber: 7; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:543)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:502)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:743)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:318)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:103)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:135)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:19:24.395 GRAVE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for /TweetBook
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/Alexis/git/TweetBook/apache-tomcat-8.0.46/webapps/TweetBook/META-INF/context.xml; lineNumber: 16; columnNumber: 7; La chaîne "--" n'est pas autorisée dans les commentaires.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanComment(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:543)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:502)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:743)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:318)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:103)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:135)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:19:24.396 GRAVE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processContextConfig S'est produite à la ligne 16 colonne 7
+07-Feb-2018 14:19:24.397 GRAVE [localhost-startStop-2] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [/TweetBook]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:753)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.catalina.LifecycleException: Failed to process either the global, per-host or context-specific context.xml file therefore the [/TweetBook] Context cannot be started.
+	at org.apache.catalina.startup.FailedContext.startInternal(FailedContext.java:199)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+07-Feb-2018 14:19:24.398 GRAVE [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Erreur lors du déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [/TweetBook]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:757)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:729)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1129)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1871)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+07-Feb-2018 14:19:24.399 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 14 ms
+07-Feb-2018 14:19:34.403 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:19:34.410 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:19:34.419 AVERTISSEMENT [localhost-startStop-3] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:19:34.473 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 63 ms
+07-Feb-2018 14:20:14.492 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:20:14.508 INFOS [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:20:14.513 AVERTISSEMENT [localhost-startStop-4] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:20:14.541 INFOS [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 33 ms
+07-Feb-2018 14:20:18.395 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:20:18.455 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:20:18.507 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:20:18.549 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:20:18.551 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:20:18.555 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:20:18.556 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:20:24.727 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:20:24.729 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:20:24.729 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:20:24.729 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:20:24.730 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:20:24.730 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:20:24.730 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:20:24.730 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:20:24.730 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:20:24.731 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:20:24.732 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:20:24.732 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:20:24.732 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:20:24.732 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:20:24.733 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:20:24.839 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:20:24.989 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:20:24.991 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:20:24.997 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:20:24.998 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 531 ms
+07-Feb-2018 14:20:25.020 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:20:25.021 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:20:25.028 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:20:25.281 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 252 ms
+07-Feb-2018 14:20:25.282 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:20:25.540 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:20:25.540 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:20:25.548 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 266 ms
+07-Feb-2018 14:20:25.548 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:20:25.577 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 29 ms
+07-Feb-2018 14:20:25.577 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:20:25.599 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 22 ms
+07-Feb-2018 14:20:25.599 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:20:25.615 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 16 ms
+07-Feb-2018 14:20:25.616 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:20:25.620 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:20:25.645 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxActive is not used in DBCP2, use maxTotal instead. maxTotal default value is 8. You have set value of "4" for "maxActive" property, which is being ignored.
+07-Feb-2018 14:20:25.645 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory.getObjectInstance Name = da2i Property maxWait is not used in DBCP2 , use maxWaitMillis instead. maxWaitMillis default value is -1. You have set value of "3000" for "maxWait" property, which is being ignored.
+07-Feb-2018 14:20:25.658 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 42 ms
+07-Feb-2018 14:20:25.661 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:20:25.668 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:20:25.671 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 673 ms
+07-Feb-2018 14:20:45.672 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:20:45.703 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:20:45.713 AVERTISSEMENT [localhost-startStop-2] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:20:45.761 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 58 ms
+07-Feb-2018 14:21:25.788 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:21:25.823 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:21:25.828 AVERTISSEMENT [localhost-startStop-3] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:21:25.871 INFOS [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 48 ms
+07-Feb-2018 14:21:35.873 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repli (undeploy) de l'application web ayant pour chemin de contexte /TweetBook
+07-Feb-2018 14:21:35.882 INFOS [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:21:35.884 AVERTISSEMENT [localhost-startStop-4] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:21:35.907 INFOS [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 25 ms
+07-Feb-2018 14:21:44.545 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:21:44.603 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:21:44.656 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:21:44.688 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:21:44.691 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:21:44.694 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:21:44.694 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:21:48.394 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:21:48.397 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:21:48.397 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:21:48.397 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:21:48.397 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:21:48.397 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:21:48.398 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:21:48.399 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:21:48.399 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:21:48.399 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:21:48.399 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:21:48.399 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:21:48.400 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:21:48.400 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:21:48.400 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:21:48.505 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:21:48.652 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:21:48.653 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:21:48.655 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:21:48.655 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 513 ms
+07-Feb-2018 14:21:48.682 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:21:48.682 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:21:48.690 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:21:48.929 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 239 ms
+07-Feb-2018 14:21:48.929 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:21:49.170 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:21:49.170 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:21:49.177 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 248 ms
+07-Feb-2018 14:21:49.178 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:21:49.204 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 26 ms
+07-Feb-2018 14:21:49.205 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:21:49.225 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 20 ms
+07-Feb-2018 14:21:49.225 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:21:49.240 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 15 ms
+07-Feb-2018 14:21:49.240 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:21:49.244 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:21:49.279 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 39 ms
+07-Feb-2018 14:21:49.282 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:21:49.289 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:21:49.292 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 635 ms
+07-Feb-2018 14:23:05.897 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:23:05.957 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:23:06.009 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:23:06.066 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:23:06.067 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:23:06.069 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:23:06.070 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:23:09.099 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:23:09.101 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:23:09.102 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:23:09.102 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:23:09.102 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:23:09.102 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:23:09.102 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:23:09.103 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:23:09.104 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:23:09.104 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:23:09.104 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:23:09.104 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:23:09.105 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:23:09.105 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:23:09.105 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:23:09.210 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:23:09.361 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:23:09.364 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:23:09.370 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:23:09.370 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 527 ms
+07-Feb-2018 14:23:09.392 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:23:09.392 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:23:09.401 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:23:09.652 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 251 ms
+07-Feb-2018 14:23:09.652 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:23:09.902 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:23:09.902 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:23:09.908 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 256 ms
+07-Feb-2018 14:23:09.909 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:23:09.937 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 27 ms
+07-Feb-2018 14:23:09.937 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:23:09.961 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 24 ms
+07-Feb-2018 14:23:09.961 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:23:09.976 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 14 ms
+07-Feb-2018 14:23:09.976 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:23:09.980 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:23:10.015 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 39 ms
+07-Feb-2018 14:23:10.017 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:23:10.024 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:23:10.026 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 656 ms
+07-Feb-2018 14:45:40.987 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:45:41.034 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Reloading context [/TweetBook]
+07-Feb-2018 14:45:41.034 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement du contexte [/TweetBook] a démarré
+07-Feb-2018 14:45:41.097 INFOS [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Le rechargement de ce contexte est terminé
+07-Feb-2018 14:45:41.112 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:45:41.175 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 14:45:41.210 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:45:41.210 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:45:41.226 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:45:41.226 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 14:45:44.634 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 14:45:44.744 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:45:44.884 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:45:44.884 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:45:44.900 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 14:45:44.900 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 513 ms
+07-Feb-2018 14:45:44.916 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 14:45:44.916 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 14:45:44.916 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 14:45:45.150 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 234 ms
+07-Feb-2018 14:45:45.150 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 14:45:45.541 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 14:45:45.541 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 14:45:45.556 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 406 ms
+07-Feb-2018 14:45:45.556 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 14:45:45.587 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 31 ms
+07-Feb-2018 14:45:45.587 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 14:45:45.603 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 16 ms
+07-Feb-2018 14:45:45.603 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 14:45:45.619 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 16 ms
+07-Feb-2018 14:45:45.619 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 14:45:45.619 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 14:45:45.650 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 31 ms
+07-Feb-2018 14:45:45.650 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 14:45:45.666 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 14:45:45.666 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 770 ms
+07-Feb-2018 16:20:39.439 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\videEvolue.war de l'application web
+07-Feb-2018 16:20:39.665 AVERTISSEMENT [localhost-startStop-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+07-Feb-2018 16:20:39.688 INFOS [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\videEvolue.war has finished in 248 ms
+07-Feb-2018 18:03:30.467 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.46
+07-Feb-2018 18:03:30.606 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 10 2017 10:10:31 UTC
+07-Feb-2018 18:03:30.606 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.46.0
+07-Feb-2018 18:03:30.606 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_144
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 18:03:30.607 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\conf\logging.properties
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\endorsed
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 18:03:30.608 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46
+07-Feb-2018 18:03:30.609 INFOS [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\temp
+07-Feb-2018 18:03:30.609 INFOS [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jre1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Program Files (x86)\ActiveState Komodo Edit 8\;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Java\jdk1.7.0_79\bin;C:\Program Files\Java\jdk1.8.0_65\jre\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Tomcat\lib;C:\Users\Alexis\AppData\Local\Microsoft\WindowsApps;.
+07-Feb-2018 18:03:32.787 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 18:03:33.543 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 18:03:33.546 INFOS [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 18:03:33.548 INFOS [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-Feb-2018 18:03:33.548 INFOS [main] org.apache.catalina.startup.Catalina.load Initialization processed in 7487 ms
+07-Feb-2018 18:03:33.707 INFOS [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+07-Feb-2018 18:03:33.707 INFOS [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.46
+07-Feb-2018 18:03:33.999 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\videEvolue.war de l'application web
+07-Feb-2018 18:03:34.876 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+07-Feb-2018 18:03:35.757 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\videEvolue.war has finished in 1 668 ms
+07-Feb-2018 18:03:35.758 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs de l'application web
+07-Feb-2018 18:03:35.809 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\docs has finished in 51 ms
+07-Feb-2018 18:03:35.809 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples de l'application web
+07-Feb-2018 18:03:40.541 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+07-Feb-2018 18:03:40.542 GRAVE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Erreur de démarrage du contexte [/examples] suite aux erreurs précédentes
+07-Feb-2018 18:03:40.617 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\examples has finished in 4 808 ms
+07-Feb-2018 18:03:40.617 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager de l'application web
+07-Feb-2018 18:03:40.727 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\host-manager has finished in 110 ms
+07-Feb-2018 18:03:40.727 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager de l'application web
+07-Feb-2018 18:03:40.833 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\manager has finished in 106 ms
+07-Feb-2018 18:03:40.833 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT de l'application web
+07-Feb-2018 18:03:40.885 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\ROOT has finished in 52 ms
+07-Feb-2018 18:03:40.885 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook de l'application web
+07-Feb-2018 18:03:40.891 AVERTISSEMENT [localhost-startStop-1] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Context/Realm} Setting property 'debug' to '99' did not find a matching property.
+07-Feb-2018 18:03:41.026 INFOS [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\Alexis\git\TweetBook\apache-tomcat-8.0.46\webapps\TweetBook has finished in 140 ms
+07-Feb-2018 18:03:41.038 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 18:03:41.068 INFOS [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 18:03:41.072 INFOS [main] org.apache.catalina.startup.Catalina.start Server startup in 7523 ms
+07-Feb-2018 18:35:50.831 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 18:35:50.946 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 18:35:51.008 INFOS [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+07-Feb-2018 18:35:51.071 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 18:35:51.161 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-Feb-2018 18:35:51.166 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+07-Feb-2018 18:35:51.167 INFOS [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

@@ -1,0 +1,97 @@
+/**
+ * Demo Styles
+ */
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
+	background: #a6b8bf; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #a6b8bf 0%, #c3d0d5 100%, #e1e8ea 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #d6dfe3 0%, #c1cfd4 100%, #acbec4 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc',
+		endColorstr='#b0bec5', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.header{
+	position:fixed;
+	top:0;
+	left:0;
+	height:9%;
+	width:100%;
+	min-height:8%;
+	margin:0;
+	background-color: #60767f;
+	z-index: 1000;
+}
+
+.header .logo img{
+	float:left;
+	margin-top:0.5%;
+	margin-bottom:0.5%;
+	margin-left:3%;
+	height : 80%;
+	width: 5%;
+}
+
+.header .profil p{
+	float: left;
+	margin:0;
+}
+
+.header .search a{
+	float: left;
+	background-color: white;
+	border-radius:15%; 
+	padding: 0.75%;
+	margin-top:0.75%;
+	margin-left:10%;
+}
+
+.header .search input{
+	float: left;
+	margin:0;
+	padding: 1.05%;
+	margin-top:0.75%;
+	margin-left:-0.45%;
+	border: 0 white; 
+}
+
+.header .search input:focus {
+    outline:none;
+}
+
+.content {
+	margin: 0 auto;
+	padding-top: 64px;
+	max-width: 640px;
+	width: 94%;
+}
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #6f8a94;
+	text-align: center;
+}
