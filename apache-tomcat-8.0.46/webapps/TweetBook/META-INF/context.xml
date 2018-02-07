@@ -3,7 +3,7 @@
 
    <!-- Definition du pool -->
   <Resource name="da2i" auth="Container" type="javax.sql.DataSource"
-  maxActive="8" maxIdle="4" maxWait="10000"
+  maxActive="4" maxIdle="4" maxWait="10000"
   username="lamboisa" password="moi" driverClassName="org.postgresql.Driver"
   url="jdbc:postgresql://psqlserv/da2i" />
 

@@ -23,7 +23,7 @@ public class Accueil extends HttpServlet {
 			Context envCtx = (Context) initCtx.lookup("java:comp/env");
 			DataSource ds = (DataSource) envCtx.lookup("da2i");
 			Connection con = ds.getConnection();
-			System.out.println("est");
+			
 		}catch(Exception e){
 			e.printStackTrace();
 		}
