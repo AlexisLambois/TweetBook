@@ -3,7 +3,7 @@
 
    <!-- Definition du pool -->
   <Resource name="da2i" auth="Container" type="javax.sql.DataSource"
-  maxActive="4" maxIdle="4" maxWait="10000"
+  maxActive="4" maxIdle="4" maxWait="3000"
   username="lamboisa" password="moi" driverClassName="org.postgresql.Driver"
   url="jdbc:postgresql://psqlserv/da2i" />
 
@@ -11,13 +11,12 @@
 
   <Realm  className="org.apache.catalina.realm.DataSourceRealm" debug="99"
            dataSourceName="da2i" localDataSource="true"
-           userTable="users" userNameCol="user_name" userCredCol="user_pass"
-           userRoleTable="user_roles" roleNameCol="role_name"  />
+           userTable="comptes" userNameCol="login" userCredCol="password"  />
 
 
   <!-- Definition d'une valve d'acces -->
   <Valve className="org.apache.catalina.valves.AccessLogValve"
-           prefix="vide_evolue_access1." suffix=".txt"
+           prefix="tweetbook_access1." suffix=".txt"
            pattern="common"/>
   
 </Context>

@@ -5,9 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TweetBook</title>
-<link rel="stylesheet" type="text/css" href="../css/connec_inscrp.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/login.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 	<div class="cotn_principal">
@@ -20,8 +19,7 @@
 
 							<h2>LOGIN</h2>
 							<p>
-								<br>
-								<br>
+								<br> <br>
 							</p>
 							<button class="btn_login" onclick="cambiar_login()">LOGIN
 								!!!</button>
@@ -33,8 +31,7 @@
 
 
 							<p>
-								It's FREE<br>
-								<br>
+								It's FREE<br> <br>
 							</p>
 
 							<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN
@@ -62,10 +59,10 @@
 						<a href="#" onclick="ocultar_login_sign_up()"><i
 							class="material-icons">&#xE5C4;</i></a>
 						<h2>LOGIN</h2>
-						<form action="./../servlet/connec_user">
-							<input type="text" placeholder="Email or Login" /> <input
-								type="password" placeholder="Password" /> <input type="submit"
-								value="LOGIN" class="btn_login" />
+						<form method="POST" action="j_security_check">
+							<input type="text" placeholder="Email or Login" name="j_username"/>
+							<input type="password" placeholder="Password" name="j_password"/>
+							<input type="submit" value="LOGIN" class="btn_login" />
 						</form>
 					</div>
 
@@ -74,19 +71,22 @@
 							class="material-icons">&#xE5C4;</i></a>
 						<h2>SIGN UP</h2>
 						<form action="./../servlet/inscrp_user">
-							<input type="email" autocomplete="on" placeholder="Email" name="email" required/>
-							<input type="text" autocomplete="on" placeholder="Login" name="login"required/>
-							<input type="text" autocomplete="on" placeholder="User Name" name="name" required/>
-							<input type="text" autocomplete="on" placeholder="User FirstName" name="firstname" required/>
-							<input type="password" autocomplete="on" placeholder="Password" name="password"required/> 
-							<input type="password" autocomplete="on" placeholder="Confirm Password" name="password2"required/>
-							<input class="btn_sign_up" type="submit" value="SIGN UP" />
+							<input type="email" autocomplete="on" placeholder="Email"
+								name="email" required /> <input type="text" autocomplete="on"
+								placeholder="Login" name="login" required /> <input type="text"
+								autocomplete="on" placeholder="User Name" name="name" required />
+							<input type="text" autocomplete="on" placeholder="User FirstName"
+								name="firstname" required /> <input type="password"
+								autocomplete="on" placeholder="Password" name="password"
+								required /> <input type="password" autocomplete="on"
+								placeholder="Confirm Password" name="password2" required /> <input
+								class="btn_sign_up" type="submit" value="SIGN UP" />
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="../js/connec_inscrp.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>

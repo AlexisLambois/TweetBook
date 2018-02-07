@@ -1,6 +1,3 @@
-/* ------------------------------------ Click on login and Sign Up to  changue and view the effect
----------------------------------------
- */
 
 function cambiar_login() {
 	document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
@@ -39,11 +36,5 @@ function ocultar_login_sign_up() {
 		document.querySelector('.cont_form_login').style.display = "none";
 	},500);  
 
-}
-
-function sign_in(){
-	
-	console.log(document.querySelector('.'));
-	
 }
 

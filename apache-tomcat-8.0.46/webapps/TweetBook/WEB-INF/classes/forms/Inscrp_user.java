@@ -38,7 +38,7 @@ public class Inscrp_user extends HttpServlet {
 			
 			if (rs.next()) {
 				
-				res.sendRedirect("../jsp/connec_inscrp.jsp?error=0");
+				res.sendRedirect("../jsp/login.jsp?error=0");
 				
 			}else{
 				
@@ -53,11 +53,11 @@ public class Inscrp_user extends HttpServlet {
 					
 					pst.executeUpdate();
 					
-					res.sendRedirect("../jsp/connec_inscrp.jsp?error=2");
+					res.sendRedirect("../jsp/login.jsp?error=2");
 					
 				}else{
 					
-					res.sendRedirect("../jsp/connec_inscrp.jsp?error=1");
+					res.sendRedirect("../jsp/login.jsp?error=1");
 					
 				}
 				
