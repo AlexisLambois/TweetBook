@@ -1,11 +1,11 @@
 package beans;
 
-import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -22,6 +22,8 @@ public class User {
 	private String email;
 	private String photo;
 	private int visibilite;
+	
+	private final SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 
 
 	public void init(String login){
@@ -42,19 +44,19 @@ public class User {
 			ds = (DataSource) envCtx.lookup("da2i");
 			con = ds.getConnection();
 
-			pst =(PreparedStatement) con.prepareStatement("SELECT * FROM comptes WHERE login=? ;"); 
+			pst =(PreparedStatement) con.prepareStatement("SELECT password,nom,prenom,role,naissance,email,photo,visibilite_mur FROM comptes WHERE login=? ;"); 
 			pst.setString(1, this.login);
 			rs = pst.executeQuery();
 			rs.next();
 
-			String field;
-			
-			Field[] fields = User.class.getDeclaredFields();
-			
-			for (int i = 0; i < fields.length; i++){
-				field = fields[i].toString();
-				System.out.println(field.substring(field.lastIndexOf('.')+1,field.length()) + " : " + rs.getString(i+1));
-			}
+			password = rs.getString(1);
+			nom = rs.getString(2);
+			prenom = rs.getString(3);
+			role = rs.getString(4);
+			naissance = new java.sql.Date(format.parse(rs.getString(5)).getTime());
+			email = rs.getString(6);
+			photo = rs.getString(7);
+			visibilite = rs.getInt(8);
 			
 		}catch(Exception e){
 			e.printStackTrace();
@@ -66,8 +68,6 @@ public class User {
 				e.printStackTrace();
 			}
 		}
-
-
 	}
 
 	public String getLogin() {

@@ -1991,3 +1991,11 @@
 0:0:0:0:0:0:0:1 - - [08/Feb/2018:12:47:55 +0100] "GET /TweetBook/css/accueil.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [08/Feb/2018:12:48:41 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 200 774
 0:0:0:0:0:0:0:1 - - [08/Feb/2018:12:49:06 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 200 774
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:39:33 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 200 774
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:39:33 +0100] "GET /TweetBook/css/accueil.css HTTP/1.1" 200 2344
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:39:33 +0100] "GET /TweetBook/img/logo.png HTTP/1.1" 200 29044
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:41:06 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 200 794
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:48:33 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 500 2937
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:49:51 +0100] "GET /TweetBook/jsp/secured/accueil.jsp HTTP/1.1" 200 806
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:49:51 +0100] "GET /TweetBook/css/accueil.css HTTP/1.1" 200 2344
+0:0:0:0:0:0:0:1 - - [08/Feb/2018:14:49:51 +0100] "GET /TweetBook/img/logo.png HTTP/1.1" 200 29044
