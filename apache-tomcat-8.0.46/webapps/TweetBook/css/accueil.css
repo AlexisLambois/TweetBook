@@ -4,6 +4,7 @@
 html {
 	height: 100%;
 	box-sizing: border-box;
+	margin:0;
 }
 
 *, *:before, *:after {
@@ -35,9 +36,10 @@ body {
 	position:fixed;
 	top:0;
 	left:0;
+	min-height: 79px;
 	height:9%;
+	min-width: 1600px;
 	width:100%;
-	min-height:8%;
 	margin:0;
 	background-color: #60767f;
 	z-index: 1000;
@@ -52,27 +54,50 @@ body {
 	width: 5%;
 }
 
-.header .profil p{
+.header .profil span{
 	float: left;
 	margin:0;
+	background-color: white;
+	min-height:74%;
+	height:74%;
+	width:15%;
+	margin-left:15%;
+	margin-top: 0.50%;
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
 }
 
-.header .search a{
-	float: left;
+.header .profil span p{
+	margin-top:6%;
+}
+
+.header .search{
 	background-color: white;
-	border-radius:15%; 
-	padding: 0.75%;
-	margin-top:0.75%;
-	margin-left:10%;
+	float:left;
+	margin-left: 25%;
+	margin-top: 0.50%;
+	min-height:74%;
+	height:74%;
+	min-width:22%;
+	width:22%;
+	border-radius: 20% 0% 0% 20%;
+}
+
+.header .search i{
+	margin-top: 5%;
+	margin-left: 3%;
+	float:left;
 }
 
 .header .search input{
-	float: left;
-	margin:0;
-	padding: 1.05%;
-	margin-top:0.75%;
-	margin-left:-0.45%;
-	border: 0 white; 
+	margin-top: 5%;
+	margin-left: 3%;
+	border: 0 white;
+	color: purple;
+	opacity:1.5;
+	font-weight: bold;
+	font-size: large;
 }
 
 .header .search input:focus {

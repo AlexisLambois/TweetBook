@@ -7,15 +7,25 @@
 <title>TweetBook</title>
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/accueil.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
 </head>
 <body>
+	<jsp:useBean id="user" scope="session" class="beans.User"/>
+	<%---user.init(request.getRemoteUser()); --%>
+	<%user.init("toto"); %>
 	<div class="header">
-		<a href="" class="logo"><img src="${pageContext.request.contextPath}/img/logo.png"/></a>
-		<div class="search"><a href=""><i class="material-icons">search</i></a><input placeholder="Rechercher" type="text"/></div>
-		<a href="" class="profil"><p>Jean CAron le con de sa mere</p></a>
+		<a href="" class="logo"><img
+			src="${pageContext.request.contextPath}/img/logo.png" /></a>
+		<div class="search">
+			<a href=""><i class="material-icons">search</i></a><input
+				placeholder="Rechercher" type="text" />
+		</div>
+		<a href="" class="profil"><span><p><%--=request.getRemoteUser()--%>toto</p></span></a>
 	</div>
-	<div class="content"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+	<div class="content">
+		<p>${user.getPassword()}</p>
+	</div>
 	<div class="footer"></div>
 </body>
 </html>
