@@ -109,8 +109,8 @@ body {
 	width: 50%;
 }
 
-.header .search #list_login{
-	visibility: hidden;
+input::-webkit-calendar-picker-indicator {
+	display: none;
 }
 
 .content {
