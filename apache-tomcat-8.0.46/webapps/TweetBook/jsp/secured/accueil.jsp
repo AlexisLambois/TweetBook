@@ -5,11 +5,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TweetBook</title>
-<link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/accueil.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet">
-	<script src="${pageContext.request.contextPath}/js/accueil.js"></script>
 </head>
 <body>
 
@@ -19,10 +14,6 @@
 		<p></p>
 	</div>
 	
-	<div class="footer"></div>
-	
-	<%
-		
-	%>
+	<%@ include file="../footer.jsp" %>
 </body>
 </html>

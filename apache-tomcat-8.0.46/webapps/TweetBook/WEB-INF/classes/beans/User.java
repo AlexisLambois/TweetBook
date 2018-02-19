@@ -25,7 +25,6 @@ public class User {
 	
 	private final SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 
-
 	public void init(String login){
 
 		this.login = login;

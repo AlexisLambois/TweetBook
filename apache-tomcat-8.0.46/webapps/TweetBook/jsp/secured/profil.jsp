@@ -7,6 +7,20 @@
 <title>TweetBook</title>
 </head>
 <body>
+	
+	<%@ include file="../header.jsp" %>
+	
+	<jsp:useBean id="user_search" scope="page" class="beans.User" />
+	<%
+		user.init(request.getParameter("login_search"));
+		if( user_search.getLogin().equals(user.getLogin()) ){
+			user_search.afficheTotal();
+		}else{
+			user_search.afficheVisiteur();
+		}
+	%>
+	
+	<%@ include file="../footer.jsp" %>
 
 </body>
 </html>

@@ -53,15 +53,9 @@ public class Sql_list {
 			}
 		}
 	}
-	
-	public String get_list_to_datalist(){
-		String res = "";
-		
-		for (String string : list) {
-			res+="<option value=\""+string.replace(","," ")+"\">";
-		}
-		
-		return res;
+
+	public ArrayList<String> getList() {
+		return list;
 	}
 
 }
