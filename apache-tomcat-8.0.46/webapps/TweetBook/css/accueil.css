@@ -104,6 +104,15 @@ body {
     outline:none;
 }
 
+.header .profil img{
+	height: 50%;
+	width: 50%;
+}
+
+.header .search #list_login{
+	visibility: hidden;
+}
+
 .content {
 	margin: 0 auto;
 	padding-top: 64px;

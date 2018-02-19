@@ -53,7 +53,7 @@ public class User {
 			nom = rs.getString(2);
 			prenom = rs.getString(3);
 			role = rs.getString(4);
-			naissance = new java.sql.Date(format.parse(rs.getString(5)).getTime());
+			naissance = rs.getDate(5);
 			email = rs.getString(6);
 			photo = rs.getString(7);
 			visibilite = rs.getInt(8);
