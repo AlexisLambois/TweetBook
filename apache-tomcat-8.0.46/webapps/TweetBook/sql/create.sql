@@ -45,11 +45,13 @@ CREATE TABLE liked(
  	CONSTRAINT FK_actualite FOREIGN KEY (actualite) REFERENCES actualite(ano)
 );
 
-INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://fr.wikipedia.org/wiki/Kim_Il-sung#/media/File:Kim_Il_Sung_Portrait-2.jpg');
+INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
 INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Phillipe','Mathieu','test1');
 INSERT INTO comptes(login,password,nom,prenom,email,role) VALUES('tata','123','Hauspie','Michael','test2','invite');
 INSERT INTO amis VALUES('toto','titi','20181015 12:00:00'::timestamp);
 INSERT INTO amis VALUES('titi','tata','20181015 15:00:00'::timestamp);
+INSERT INTO amis VALUES('titi','toto','20181015 12:00:00'::timestamp);
+INSERT INTO amis VALUES('tata','toto','20181015 15:00:00'::timestamp);
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('toto est amis avec titi','20181015 12:00:00'::timestamp,'toto');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec tata','20181015 15:00:00'::timestamp,'titi');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec toto','20181015 12:00:00'::timestamp,'titi');
