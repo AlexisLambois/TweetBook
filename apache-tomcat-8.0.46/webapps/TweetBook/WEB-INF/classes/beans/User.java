@@ -39,7 +39,7 @@ public class User {
 		DataSource ds;
 		Connection con = null;
 		PreparedStatement pst;
-		ResultSet rs = null;;
+		ResultSet rs = null;
 
 		try {
 
@@ -201,6 +201,40 @@ public class User {
 
 	public boolean verifier_amitie(User u){
 		return this.amis.containsKey(u.getLogin()) || this.login.equals(u.login);
+	}
+	
+	public void ajouter_amis(User u){
+
+		Context initCtx;
+		Context envCtx;
+		DataSource ds;
+		Connection con = null;
+		PreparedStatement pst;
+
+		try {
+
+			initCtx = new InitialContext();
+			envCtx = (Context) initCtx.lookup("java:comp/env");
+			ds = (DataSource) envCtx.lookup("da2i");
+			con = ds.getConnection();
+
+			pst =(PreparedStatement) con.prepareStatement("INSERT INTO amis VALUES(?,?,?);"); 
+			pst.setString(1, this.login);
+			pst.setString(2, u.getLogin());
+			pst.setTimestamp(3, new Timestamp(System.currentTimeMillis()));
+			pst.executeUpdate();
+			
+			this.amis.put(u.getLogin(), new Timestamp(System.currentTimeMillis()));
+
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 }

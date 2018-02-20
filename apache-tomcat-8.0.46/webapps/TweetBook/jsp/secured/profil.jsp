@@ -13,7 +13,7 @@
 	<p></p>
 	${user_search.afficheVisiteur()}
 	<c:if test="${!user.verifier_amitie(user_search)}">
-		<button>Ajouter comme Amis !!!</button>
+		<a href="" onclick="${user.ajouter_amis(user_search)}">Ajouter comme Amis !!!</a>
 	</c:if>
 </div>
 
