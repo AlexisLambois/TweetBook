@@ -1,19 +1,15 @@
 package beans;
 
-import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.sql.DataSource;
 
 public class User {
 
@@ -28,27 +24,20 @@ public class User {
 	private int visibilite;
 	private HashMap<String,Timestamp> amis = new HashMap<>();
 
-	private final SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+	Connexion con = null;
+	private final SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
 	public void init(String login){
 
 		this.login = login;
 
-		Context initCtx;
-		Context envCtx;
-		DataSource ds;
-		Connection con = null;
+		con = new Connexion();
 		PreparedStatement pst;
 		ResultSet rs = null;
 
 		try {
 
-			initCtx = new InitialContext();
-			envCtx = (Context) initCtx.lookup("java:comp/env");
-			ds = (DataSource) envCtx.lookup("da2i");
-			con = ds.getConnection();
-
-			pst =(PreparedStatement) con.prepareStatement("SELECT password,nom,prenom,role,naissance,email,photo,visibilite_mur FROM comptes WHERE login=? ;"); 
+			pst =(PreparedStatement) con.getCon().prepareStatement("SELECT password,nom,prenom,role,naissance,email,photo,visibilite_mur FROM comptes WHERE login=? ;"); 
 			pst.setString(1, this.login);
 			rs = pst.executeQuery();
 			rs.next();
@@ -62,7 +51,7 @@ public class User {
 			photo = rs.getString(7);
 			visibilite = rs.getInt(8);
 
-			pst =(PreparedStatement) con.prepareStatement("SELECT cno2,depuis from amis WHERE cno1=? UNION SELECT cno1,depuis FROM amis WHERE cno2=?;"); 
+			pst =(PreparedStatement) con.getCon().prepareStatement("SELECT cno2,depuis from amis WHERE cno1=? UNION SELECT cno1,depuis FROM amis WHERE cno2=?;"); 
 			pst.setString(1, this.login);
 			pst.setString(2, this.login);
 			rs = pst.executeQuery();
@@ -130,7 +119,7 @@ public class User {
 	public void setNaissance(Date naissance) {
 		this.naissance = naissance;
 	}
-	
+
 	public String getEmail() {
 		return email;
 	}
@@ -163,10 +152,6 @@ public class User {
 		this.amis = amis;
 	}
 
-	public SimpleDateFormat getFormat() {
-		return format;
-	}
-
 	public String afficheVisiteur(){
 
 		if( this.getVisibilite() == 2 ){
@@ -190,51 +175,115 @@ public class User {
 			res+="<tr><th> Photo : </th><td>"+this.photo+"</td></tr>";
 		}
 		res+="<tr><th> Amis avec : </th><td>";
+
 		Iterator it = amis.entrySet().iterator();
+
 		while (it.hasNext()) {
 			Map.Entry pair = (Map.Entry)it.next();
-			res+=" <b><a href=profil.jsp?login_search="+pair.getKey()+">"+pair.getKey() + "</a></b> depuis le " + pair.getValue()+"<br>";
+			res+=" <b><a href=profil.jsp?login_search="+pair.getKey()+">"+pair.getKey() + "</a></b> depuis le " + format.format(pair.getValue())+"<br>";
 			it.remove();
 		}
+
 		return res+"</td></table>";
 	}
 
 	public boolean verifier_amitie(User u){
 		return this.amis.containsKey(u.getLogin()) || this.login.equals(u.login);
 	}
-	
+
 	public void ajouter_amis(User u){
 
-		Context initCtx;
-		Context envCtx;
-		DataSource ds;
-		Connection con = null;
 		PreparedStatement pst;
-
+		con = new Connexion();
 		try {
 
-			initCtx = new InitialContext();
-			envCtx = (Context) initCtx.lookup("java:comp/env");
-			ds = (DataSource) envCtx.lookup("da2i");
-			con = ds.getConnection();
-
-			pst =(PreparedStatement) con.prepareStatement("INSERT INTO amis VALUES(?,?,?);"); 
+			pst =(PreparedStatement) con.getCon().prepareStatement("INSERT INTO amis VALUES(?,?,?);"); 
 			pst.setString(1, this.login);
 			pst.setString(2, u.getLogin());
 			pst.setTimestamp(3, new Timestamp(System.currentTimeMillis()));
 			pst.executeUpdate();
-			
+
+			pst =(PreparedStatement) con.getCon().prepareStatement("INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES(?,?,?);"); 
+			pst.setString(1, this.login+" est amis avec "+u.getLogin());
+			pst.setTimestamp(2, new Timestamp(System.currentTimeMillis()));
+			pst.setString(3,this.login);
+			pst.executeUpdate();
+
 			this.amis.put(u.getLogin(), new Timestamp(System.currentTimeMillis()));
 
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally {
+			con.close();
+		}
+	}
+
+	public String afficheActualite(){
+		
+		con = new Connexion();
+		Statement stmt;
+		ResultSet rs = null;
+		HashMap<String,Timestamp> acutalites = new HashMap<>();
+
+		String res = "<table>";
+		
+		try {
+
+			stmt = con.getCon().createStatement();
+			rs = stmt.executeQuery("SELECT contenu,ecrit_par,date_ecriture,2 as type "
+					+ "FROM actualite "
+					+ "WHERE date_ecriture >= current_date-cast('7 day' as interval) AND ecrit_par in ("
+						+ "SELECT cno2 "
+						+ "FROM amis "
+						+ "WHERE cno1='"+this.login+"' "
+						+ "UNION "
+						+ "SELECT cno1 "
+						+ "FROM amis "
+						+ "WHERE cno2='"+this.login+"') "
+					+ "OR ecrit_par='"+this.login+"' "
+					+ "UNION "
+					+ "SELECT *,1 as type "
+					+ "FROM amis "
+					+ "WHERE depuis >= current_date - cast('7 day' as interval) AND (cno1 in ("
+						+ "SELECT cno2 "
+						+ "FROM amis "
+						+ "WHERE cno1='"+this.login+"' "
+						+ "UNION "
+						+ "SELECT cno1 "
+						+ "FROM amis "
+						+ "WHERE cno2='"+this.login+"') "
+					+ "OR cno2 in("
+						+ "SELECT cno2 "
+						+ "FROM amis "
+						+ "WHERE cno1='"+this.login+"'"
+						+ "UNION "
+						+ "SELECT cno1 "
+						+ "FROM amis "
+						+ "WHERE cno2='"+this.login+"')"
+					+ ") ORDER BY date_ecriture DESC;");
+
+
+			while( rs.next() ){
+				if( rs.getInt(4) == 1 ){
+					res+="<tr><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr><td><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> est amis avec <a href=profil.jsp?login_search="+rs.getString(1)+">"+rs.getString(1)+"</a> "+format.format(rs.getTimestamp(3))+"<i class=\"material-icons\">&#xE8DC;</i></td></tr>";
+				}else{
+					res+="<tr><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr><td><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> a ecrit : "+rs.getString(1)+" "+format.format(rs.getTimestamp(3))+"<i class=\"material-icons\">&#xE8DC;</i></td></tr>";
+				}
+			}
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
 			try {
 				con.close();
+				rs.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
 		}
+
+
+		return res+"</table>";
 	}
 
 }

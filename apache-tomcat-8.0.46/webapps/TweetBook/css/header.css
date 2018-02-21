@@ -18,12 +18,12 @@ body {
 	min-height: 100%;
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-	background: #a6b8bf; /* Old browsers */
+	background: #cfd8dc; /* Old browsers */
 	background: -moz-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
 	/* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #a6b8bf 0%, #c3d0d5 100%, #e1e8ea 100%);
+	background: -webkit-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
 	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #d6dfe3 0%, #c1cfd4 100%, #acbec4 100%);
+	background: linear-gradient(135deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc',
 		endColorstr='#b0bec5', GradientType=1);
@@ -54,7 +54,7 @@ body {
 	width: 5%;
 }
 
-.header .profil span{
+.header .profil{
 	float: left;
 	margin:0;
 	background-color: white;
@@ -66,10 +66,9 @@ body {
 	text-align: center;
 	font-size: x-large;
 	font-weight: bold;
-}
-
-.header .profil span p{
-	margin-top:6%;
+  	white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+    
+    text-align: center;
 }
 
 .header .search{
@@ -105,8 +104,18 @@ body {
 }
 
 .header .profil img{
-	height: 50%;
-	width: 50%;
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+}
+
+.header .profil p{
+	vertical-align: middle;
+}
+
+.header .profil a{
+	display: inline-block;
+    vertical-align: middle;
 }
 
 input::-webkit-calendar-picker-indicator {

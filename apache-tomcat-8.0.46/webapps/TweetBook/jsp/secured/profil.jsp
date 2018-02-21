@@ -13,7 +13,10 @@
 	<p></p>
 	${user_search.afficheVisiteur()}
 	<c:if test="${!user.verifier_amitie(user_search)}">
-		<a href="" onclick="${user.ajouter_amis(user_search)}">Ajouter comme Amis !!!</a>
+		<form action="${pageContext.request.contextPath}/servlet/insert_amis">
+			<input type="hidden" value="${user_search.getLogin()}" name="hidden"/>
+			<input type="submit" value="Ajouter comme Amis !!!"/>
+		</form>
 	</c:if>
 </div>
 

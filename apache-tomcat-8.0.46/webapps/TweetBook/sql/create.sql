@@ -48,12 +48,45 @@ CREATE TABLE liked(
 INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
 INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Phillipe','Mathieu','test1');
 INSERT INTO comptes(login,password,nom,prenom,email,role) VALUES('tata','123','Hauspie','Michael','test2','invite');
-INSERT INTO amis VALUES('toto','titi','20181015 12:00:00'::timestamp);
-INSERT INTO amis VALUES('titi','tata','20181015 15:00:00'::timestamp);
-INSERT INTO amis VALUES('titi','toto','20181015 12:00:00'::timestamp);
-INSERT INTO amis VALUES('tata','toto','20181015 15:00:00'::timestamp);
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('toto est amis avec titi','20181015 12:00:00'::timestamp,'toto');
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec tata','20181015 15:00:00'::timestamp,'titi');
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('titi est amis avec toto','20181015 12:00:00'::timestamp,'titi');
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('tata est amis avec titi','20181015 15:00:00'::timestamp,'tata');
+INSERT INTO comptes(login,password,nom,prenom,email) VALUES('tete','123','test','test','test3');
+INSERT INTO amis VALUES('toto','titi',CURRENT_TIMESTAMP);
+INSERT INTO amis VALUES('tete','tata',CURRENT_TIMESTAMP);
+INSERT INTO amis VALUES('titi','tata',CURRENT_TIMESTAMP);
+INSERT INTO amis VALUES('titi','alexis.lambois','20171015 15:00:00'::timestamp);
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Jadore les pizzas !',CURRENT_TIMESTAMP,'toto');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Jaime les pommes',CURRENT_TIMESTAMP,'titi');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je suis au toilette',CURRENT_TIMESTAMP,'titi');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je mennuie','20171015 15:00:00'::timestamp,'tata');
 INSERT INTO liked VALUES('tata',1,0);
+
+SELECT contenu,ecrit_par,date_ecriture,2 as type 
+FROM actualite 
+WHERE date_ecriture >= current_date-cast('7 day' as interval) AND ecrit_par in (
+	SELECT cno2 
+	from amis 
+	WHERE cno1='toto' 
+	UNION 
+	SELECT cno1 
+	FROM amis 
+	WHERE cno2='toto') 
+OR ecrit_par='toto' 
+UNION 
+SELECT *,1 as type 
+FROM amis 
+WHERE depuis >= current_date - cast('7 day' as interval) AND (cno1 in (
+	SELECT cno2 
+	from amis 
+	WHERE cno1='toto' 
+	UNION 
+	SELECT cno1 
+	FROM amis 
+	WHERE cno2='toto') 
+OR cno2 in(
+	SELECT cno2 
+	from amis 
+	WHERE cno1='toto' 
+	UNION 
+	SELECT cno1 
+	FROM amis 
+	WHERE cno2='toto')
+) ORDER BY date_ecriture DESC;
