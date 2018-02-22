@@ -35,10 +35,9 @@
 			</div>
 		</div>
 		<div class="profil">
-			<a href="" > 
-			<img alt=""
-					src="${user.getPhoto()}" />
-				<%--=request.getRemoteUser()--%><p>toto</p>
-			</a>
+<!-- 			<a href="" > -->
+			<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>toto</p></td></tr></table>
+				<%--=request.getRemoteUser()--%>
+<!-- 			</a> -->
 		</div>
 	</div>
