@@ -1,2 +1,8 @@
 @CHARSET "UTF-8";
 
+.content form>input[type=text]{
+	width: 400px;
+	border-radius:20px;
+	height: 60px;
+	padding-left: 10px;
+}

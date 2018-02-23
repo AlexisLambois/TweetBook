@@ -7,5 +7,7 @@ function hide_login(){
 }
 
 function to_profil(){
-	window.location = "profil.jsp?login_search="+document.getElementById("input_login").value;
+	if(document.getElementById("input_login").value !== ""){
+		window.location = "profil.jsp?login_search="+document.getElementById("input_login").value;
+	}
 }
