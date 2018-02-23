@@ -4,7 +4,7 @@
 html {
 	height: 100%;
 	box-sizing: border-box;
-	margin:0;
+	margin: 0;
 }
 
 *, *:before, *:after {
@@ -28,94 +28,90 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc',
 		endColorstr='#b0bec5', GradientType=1);
 	/* IE6-9 fallback on horizontal gradient */
-	background-repeat:no-repeat;
-	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-.header{
-	position:fixed;
-	top:0;
-	left:0;
-	min-height: 79px;
-	height:9%;
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 80px;
+	height: 9%;
 	min-width: 1600px;
-	width:100%;
-	margin:0;
+	width: 100%;
+	margin: 0;
 	background-color: #60767f;
 	z-index: 1000;
 }
 
-.header .logo img{
-	float:left;
-	margin-top:0.5%;
-	margin-bottom:0.5%;
-	margin-left:3%;
-	height : 80%;
+.header .logo img {
+	float: left;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 3%;
+	height: 80%;
 	width: 5%;
 }
 
-.header .profil{
+.header .profil {
 	float: left;
-	margin:0;
+	margin: 0;
 	background-color: white;
-	min-height:74%;
-	height:74%;
-	width:15%;
-	margin-left:15%;
+	min-height: 74%;
+	height: 74%;
+	width: 15%;
+	margin-left: 15%;
 	margin-top: 0.50%;
-	text-align: center;
+	margin-bottom: 0.50%;
 	font-size: x-large;
 	font-weight: bold;
-  	white-space: nowrap; /* this is required unless you put the helper span closely near the img */
-    
-    text-align: center;
 }
 
-.header .search{
+.header .search {
 	background-color: white;
-	float:left;
+	float: left;
 	margin-left: 25%;
 	margin-top: 0.50%;
-	min-height:74%;
-	height:74%;
-	min-width:22%;
-	width:22%;
+	min-height: 74%;
+	height: 74%;
+	min-width: 22%;
+	width: 22%;
 	border-radius: 20% 0% 0% 20%;
 }
 
-.header .search i{
+.header .search i {
 	margin-top: 5%;
 	margin-left: 3%;
-	float:left;
+	float: left;
 }
 
-.header .search input{
+.header .search input {
 	margin-top: 5%;
 	margin-left: 3%;
 	border: 0 white;
 	color: purple;
-	opacity:1.5;
+	opacity: 1.5;
 	font-weight: bold;
 	font-size: large;
 }
 
 .header .search input:focus {
-    outline:none;
+	outline: none;
 }
 
-.header .profil img{
+.header .profil img {
 	height: 50px;
 	width: 50px;
-	vertical-align: middle;
 }
 
-.header .profil p{
-	vertical-align: middle;
+.header .profil p {
+	margin: 0;
 }
 
-.header .profil a{
-	display: inline-block;
-    vertical-align: middle;
+.header .profil table {
+	margin: 4px auto;
+	text-align: left;
 }
 
 input::-webkit-calendar-picker-indicator {
@@ -123,10 +119,10 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .content {
-	margin: 0 auto;
-	padding-top: 64px;
+	margin: 8% auto auto auto;
 	max-width: 640px;
 	width: 94%;
+	max-height: 640px;
 }
 
 .footer {
