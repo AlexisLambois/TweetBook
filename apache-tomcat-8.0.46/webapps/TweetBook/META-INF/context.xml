@@ -1,7 +1,7 @@
 <Context path="/TweetBook" privileged="true" reloadable="true" >
 <Manager pathname="" />
   
-  <!-- Definition du pool -->
+  <!-- Definition du pool 
   <Resource name="da2i" 
   	auth="Container" 
   	type="javax.sql.DataSource"
@@ -11,9 +11,9 @@
   	username="lamboisa" 
   	password="moi" 
   	driverClassName="org.postgresql.Driver"
-  	url="jdbc:postgresql://psqlserv/da2i" />
+  	url="jdbc:postgresql://psqlserv/da2i" /> -->
   	
-  	<!-- <Resource name="da2i" 
+  	<Resource name="da2i" 
   	auth="Container" 
   	type="javax.sql.DataSource"
   	maxTotal="4" 
@@ -22,7 +22,7 @@
   	username="lamboisa" 
   	password="moi" 
   	driverClassName="org.postgresql.Driver"
-  	url="jdbc:postgresql://localhost/da2i" /> -->
+  	url="jdbc:postgresql://localhost/da2i" />
 
   <!-- Definition du Realm via le pool -->
 

@@ -225,7 +225,7 @@ public class User {
 		ResultSet rs = null;
 		HashMap<String,Timestamp> acutalites = new HashMap<>();
 
-		String res = "<table>";
+		String res = "<ul>";
 		
 		try {
 
@@ -265,9 +265,9 @@ public class User {
 
 			while( rs.next() ){
 				if( rs.getInt(4) == 1 ){
-					res+="<tr><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr><td><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> est amis avec <a href=profil.jsp?login_search="+rs.getString(1)+">"+rs.getString(1)+"</a> "+format.format(rs.getTimestamp(3))+"</td></tr>";
+					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> est amis avec <a href=profil.jsp?login_search="+rs.getString(1)+">"+rs.getString(1)+"</a></p><span>"+format.format(rs.getTimestamp(3))+"</span></td></tr></table></li>";
 				}else{
-					res+="<tr><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr><td><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> a ecrit : "+rs.getString(1)+" "+format.format(rs.getTimestamp(3))+"<i class=\"material-icons\">&#xE8DC;</i></td></tr>";
+					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><i class=\"material-icons\">&#xE8DC;</i></td></tr></table></li>";
 				}
 			}
 			
@@ -283,7 +283,7 @@ public class User {
 		}
 
 
-		return res+"</table>";
+		return res+"</ul>";
 	}
 
 }
