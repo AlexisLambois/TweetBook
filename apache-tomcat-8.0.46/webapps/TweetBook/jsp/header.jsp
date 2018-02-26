@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
 <script src="${pageContext.request.contextPath}/js/header.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<jsp:useBean id="user" scope="session" class="beans.User" />
@@ -16,7 +17,7 @@
 		class="beans.Sql_list_User" />
 	<%---user.init(request.getRemoteUser()); --%>
 	<%
-		user.init("toto");
+		user.init("titi");
 	%>
 	<%
 		sql_list_user.init("login,prenom,nom", "comptes", 3);
@@ -35,9 +36,9 @@
 			</div>
 		</div>
 		<div class="profil">
-<!-- 			<a href="" > -->
-			<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>toto</p></td></tr></table>
+			<a href="${pageContext.request.contextPath}/jsp/secured/profil.jsp?login_search=${user.getLogin()}" >
+			<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>${user.getLogin()}</p></td></tr></table>
 				<%--=request.getRemoteUser()--%>
-<!-- 			</a> -->
+			</a>
 		</div>
 	</div>

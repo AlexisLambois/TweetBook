@@ -58,35 +58,8 @@ INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Jaime les pommes'
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je suis au toilette',CURRENT_TIMESTAMP,'titi');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je mennuie','20171015 15:00:00'::timestamp,'tata');
 INSERT INTO liked VALUES('tata',1,0);
+INSERT INTO liked VALUES('toto',1,0);
+INSERT INTO liked VALUES('tata',2,0);
+INSERT INTO liked VALUES('toto',3,0);
 
-SELECT contenu,ecrit_par,date_ecriture,2 as type 
-FROM actualite 
-WHERE date_ecriture >= current_date-cast('7 day' as interval) AND ecrit_par in (
-	SELECT cno2 
-	from amis 
-	WHERE cno1='toto' 
-	UNION 
-	SELECT cno1 
-	FROM amis 
-	WHERE cno2='toto') 
-OR ecrit_par='toto' 
-UNION 
-SELECT *,1 as type 
-FROM amis 
-WHERE depuis >= current_date - cast('7 day' as interval) AND (cno1 in (
-	SELECT cno2 
-	from amis 
-	WHERE cno1='toto' 
-	UNION 
-	SELECT cno1 
-	FROM amis 
-	WHERE cno2='toto') 
-OR cno2 in(
-	SELECT cno2 
-	from amis 
-	WHERE cno1='toto' 
-	UNION 
-	SELECT cno1 
-	FROM amis 
-	WHERE cno2='toto')
-) ORDER BY date_ecriture DESC;
+SELECT concat('<a href=\"',liker_par,'\">',liker_par,'</a>') FROM liked WHERE actualite=1;

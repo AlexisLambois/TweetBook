@@ -218,19 +218,24 @@ public class User {
 		}
 	}
 
-	public String afficheActualite(){
+	public String afficheActualite(String contextPath){
 		
 		con = new Connexion();
 		Statement stmt;
+		Statement stmt1;
 		ResultSet rs = null;
+		ResultSet rs1 = null;
 		HashMap<String,Timestamp> acutalites = new HashMap<>();
-
+		boolean find = false;
+		String temp;
+		
 		String res = "<ul>";
 		
 		try {
 
 			stmt = con.getCon().createStatement();
-			rs = stmt.executeQuery("SELECT contenu,ecrit_par,date_ecriture,2 as type "
+			stmt1 = con.getCon().createStatement();
+			String query = "SELECT contenu,ecrit_par,date_ecriture,2 as type,ano "
 					+ "FROM actualite "
 					+ "WHERE date_ecriture >= current_date-cast('7 day' as interval) AND ecrit_par in ("
 						+ "SELECT cno2 "
@@ -242,7 +247,7 @@ public class User {
 						+ "WHERE cno2='"+this.login+"') "
 					+ "OR ecrit_par='"+this.login+"' "
 					+ "UNION "
-					+ "SELECT *,1 as type "
+					+ "SELECT *,1 as type,-1 as ano "
 					+ "FROM amis "
 					+ "WHERE depuis >= current_date - cast('7 day' as interval) AND (cno1 in ("
 						+ "SELECT cno2 "
@@ -260,14 +265,35 @@ public class User {
 						+ "SELECT cno1 "
 						+ "FROM amis "
 						+ "WHERE cno2='"+this.login+"')"
-					+ ") ORDER BY date_ecriture DESC;");
-
+					+ ") ORDER BY date_ecriture DESC;";
+				rs = stmt.executeQuery(query);
 
 			while( rs.next() ){
 				if( rs.getInt(4) == 1 ){
 					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a> est amis avec <a href=profil.jsp?login_search="+rs.getString(1)+">"+rs.getString(1)+"</a></p><span>"+format.format(rs.getTimestamp(3))+"</span></td></tr></table></li>";
 				}else{
-					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><i class=\"material-icons\">&#xE8DC;</i></td></tr></table></li>";
+					query = "SELECT concat('<a href=\""+contextPath+"/jsp/secured/profil.jsp?login_search=',liker_par,'\">',liker_par,'</a>'),liker_par FROM liked WHERE actualite="+rs.getInt(5)+";";
+					rs1 = stmt1.executeQuery(query);
+					temp = "";
+					find = false;
+					while(rs1.next()) {
+						temp+=rs1.getString(1)+",";
+						if( !find && rs1.getString(2).equals(this.getLogin()) ){
+							find = true;
+						}
+					}
+					//res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><a href=\""+contextPath+"/servlet/like_event?id_event="+rs.getInt(5)+"\">";
+					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><a onclick=\"send("+rs.getInt(5)+")\">";
+					if(find) {
+						res+="<i id=\"valide\" class=\"material-icons\">&#xE8DC;</i>";
+					}else {
+						res+="<i class=\"material-icons\">&#xE8DC;</i>";
+					}
+					res+="</a>";
+					if(!temp.equals("")) {
+						res+="<h1>"+temp.substring(0,temp.length()-1)+" a/ont aimé(es) cette publication</h1>";
+					}
+					res+="</td></tr></table></li>";
 				}
 			}
 			

@@ -5,6 +5,19 @@
 	border-radius:20px;
 	height: 60px;
 	padding-left: 10px;
+	border:2px black solid;
+}
+.content form>input[type=submit]{
+	width: 100px;
+	border-radius:20px;
+	height: 30px;
+	border:2px black solid;
+	margin-left: 10px;
+}
+
+.content form>input[type=submit]:hover{
+	cursor:pointer;
+	zoom:105%;
 }
 
 .content ul{
@@ -14,40 +27,46 @@
 
 .content li{
 	border: 2px black solid;
-/* 	background-color: #cfd8dc; */
+ 	background-color: #cfd8dc; 
 	list-style: none;
 	margin-top: 10px;
-	height: 200px;
+	height: 300px;
 	width: 800px;
 	border-radius: 20px;
 	margin-left: -15%;
 }
 
 .content table{
-	height: 200px;
+	height: 300px;
 	width: 800px;
+	margin-top: -2px;
+	margin-left: -2px;
 }
 
 .entete_act{
 	width: 800px;
+	background-color: #60767f;
 }
 
 .entete_act th{
 	border-bottom: 1px black solid;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
 }
 
 .entete_act a{
 	float:left;
-	margin-left: 30px;
+	margin-left: 50px;
 	margin-top: 10px;
-	font-size: large;
+	font-size:xx-large;
+	font-family: 'Indie Flower', cursive;
 	font-style: normal;
 	text-decoration: none;
-	color: #811453;
+	color: yellow;
 }
 
 .entete_act a:hover{
-	zoom:110%;
+	zoom:105%;
 }
 
 .corps_act{
@@ -56,12 +75,13 @@
 
 .corps_act p{
 	margin-left: 30px;
-	height: 75px;
-	max-height:75px;
-	margin-top: 0;
-	margin-bottom: 0;
+	height: 140px;
+	max-height:140px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	overflow: auto;
 	width: 94%;
+	font-size: large;
 }
 
 .corps_act span{
@@ -72,4 +92,38 @@
 .corps_act i{
 	float:left;
 	margin-left: 10px;
+}
+
+.corps_act i:hover{
+	zoom:105%;
+	cursor: pointer;
+}
+
+#valide{
+	color:red;
+}
+
+.corps_act a{
+	text-decoration: none;
+	color:  #60767f;
+	font-family: 'Indie Flower', cursive;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.corps_act a:hover{
+	zoom:105%;
+}
+
+.corps_act h1{
+	float:left;
+	margin: 0;
+	font-size: small;
+	font-weight: normal;
+	height: 24px;
+	margin-left: 25px;
+}
+
+.corps_act h1>a{
+	font-size: large;
 }

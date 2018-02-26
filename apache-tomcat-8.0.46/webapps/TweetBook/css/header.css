@@ -60,24 +60,28 @@ body {
 	background-color: white;
 	min-height: 74%;
 	height: 74%;
-	width: 15%;
-	margin-left: 15%;
+	width: 13%;
+	margin-left: 25%;
 	margin-top: 0.50%;
 	margin-bottom: 0.50%;
 	font-size: x-large;
 	font-weight: bold;
 }
 
+.header .profil a{
+	text-decoration: none;
+	color: #60767f;
+}
+
 .header .search {
 	background-color: white;
 	float: left;
-	margin-left: 25%;
+	margin-left: 28%;
 	margin-top: 0.50%;
 	min-height: 74%;
 	height: 74%;
 	min-width: 22%;
 	width: 22%;
-	border-radius: 20% 0% 0% 20%;
 }
 .header .search a:hover{
 	cursor: pointer;	
@@ -87,6 +91,10 @@ body {
 	margin-top: 5%;
 	margin-left: 3%;
 	float: left;
+}
+
+.header .search i:hover{
+	zoom:110%;
 }
 
 .header .search input {
@@ -109,7 +117,9 @@ body {
 }
 
 .header .profil p {
-	margin: 0;
+	margin: 0 0 0 5px;
+	font-weight: bold;
+	font-size: x-large;
 }
 
 .header .profil table {
