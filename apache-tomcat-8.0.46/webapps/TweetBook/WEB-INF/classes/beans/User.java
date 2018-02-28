@@ -282,7 +282,6 @@ public class User {
 							find = true;
 						}
 					}
-					//res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><a href=\""+contextPath+"/servlet/like_event?id_event="+rs.getInt(5)+"\">";
 					res+="<li><table><tr class=\"entete_act\"><th><a href=profil.jsp?login_search="+rs.getString(2)+">"+rs.getString(2)+"</a></th></tr><tr class=\"corps_act\"><td><p>"+rs.getString(1)+"</p><span>"+format.format(rs.getTimestamp(3))+"</span><a onclick=\"send("+rs.getInt(5)+")\">";
 					if(find) {
 						res+="<i id=\"valide\" class=\"material-icons\">&#xE8DC;</i>";

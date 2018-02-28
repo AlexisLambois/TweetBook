@@ -13,20 +13,15 @@
 </head>
 <body>
 	<jsp:useBean id="user" scope="session" class="beans.User" />
-	<jsp:useBean id="sql_list_user" scope="page"
-		class="beans.Sql_list_User" />
+	<jsp:useBean id="sql_list_user" scope="page" class="beans.Sql_list_User" />
 	<%---user.init(request.getRemoteUser()); --%>
-	<%
-		user.init("titi");
-	%>
-	<%
-		sql_list_user.init("login,prenom,nom", "comptes", 3);
-	%>
+	<% user.init("titi"); %>
+	<% sql_list_user.init("login,prenom,nom", "comptes", 3); %>
 
 	<div class="header">
 		<a href="${pageContext.request.contextPath}/jsp/secured/accueil.jsp"
 			class="logo"><img
-			src="${pageContext.request.contextPath}/img/logo.png" /></a>
+			src="${pageContext.request.contextPath}/img/TWEETBOOK.jpg" /></a>
 		<div class="search">
 			<a onclick="to_profil()"><i class="material-icons">search</i></a> <input
 				id="input_login" list="name_firstname" onclick="show_login()"
