@@ -158,23 +158,23 @@ public class User {
 			return "<h1>Profil BLoque</h1>";
 		}
 
-		String res = "<table>";
+		String res = "<ul>";
 
-		res+="<tr><th> Login : </th><td>"+this.login+"</td></tr>";
-		res+="<tr><th> Nom : </th><td>"+this.nom+"</td></tr>";
-		res+="<tr><th> Prenom : </th><td>"+this.prenom+"</td></tr>";
+		res+="<li><table><tr><th><span class=\"underline\">Login</span> :</th><td>"+this.login+"</td></tr></table></li>";
+		res+="<li><table><tr><th><span class=\"underline\">Nom</span> :</th><td>"+this.nom+"</td></tr></table></li>";
+		res+="<li><table><tr><th><span class=\"underline\">Prenom</span> :</th><td>"+this.prenom+"</td></tr></table></li>";
 		if( this.naissance == null ){
-			res+="<tr><th> Naissance : </th><td>Non renseignee</td></tr>";
+			res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" ></td></tr></table></li>";
 		}else{
-			res+="<tr><th> Naissance : </th><td>"+this.naissance+"</td></tr>";
+			res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" value=\""+this.naissance+"\"></td></tr></table></li>";
 		}
-		res+="<tr><th> Email : </th><td>"+this.email+"</td></tr>";
+		res+="<li><table><tr><th><span class=\"underline\">Email</span> :</th><td><input onchange=show_form() type=\"email\" value=\""+this.email+"\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
 		if( this.photo == null ){
-			res+="<tr><th> Photo : </th><td>Non renseignee</td></tr>";
+			res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() type=\"url\" list=\"defaultURLs\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
 		}else{
-			res+="<tr><th> Photo : </th><td>"+this.photo+"</td></tr>";
+			res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() type=\"url\" list=\"defaultURLs\" value=\""+this.photo+"\"></td></tr></table></li>";
 		}
-		res+="<tr><th> Amis avec : </th><td>";
+		res+="<li><table><tr><th><span class=\"underline\">Amis avec</span> :</th><td>";
 
 		Iterator it = amis.entrySet().iterator();
 
@@ -184,7 +184,7 @@ public class User {
 			it.remove();
 		}
 
-		return res+"</td></table>";
+		return res+"</td></tr></table></li></ul>";
 	}
 
 	public boolean verifier_amitie(User u){

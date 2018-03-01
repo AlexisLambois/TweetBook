@@ -1,6 +1,12 @@
 /**
  * Demo Styles
  */
+ 
+@font-face {
+        font-family: "mv_boli";
+        src: url(/TweetBook/font/mvboli.ttf);
+}
+
 html {
 	height: 100%;
 	box-sizing: border-box;
@@ -16,18 +22,9 @@ body {
 	margin: 0;
 	padding-bottom: 6rem;
 	min-height: 100%;
+	min-width: 1340px;
 	font-family: "Helvetica Neue", Arial, sans-serif;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-	background: #cfd8dc; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, #cfd8dc 0%, #607d8b 100%, #b0bec5 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc',
-		endColorstr='#b0bec5', GradientType=1);
-	/* IE6-9 fallback on horizontal gradient */
+	background-color: rgba(95, 169, 221, 0.5);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -41,7 +38,7 @@ body {
 	min-width: 1600px;
 	width: 100%;
 	margin: 0;
-	background-color: #60767f;
+	background-color: #5FA9DD;
 	z-index: 1000;
 }
 
@@ -50,8 +47,8 @@ body {
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
 	margin-left: 3%;
-	height: 80%;
-	width: 5%;
+	height: 75%;
+	width: 10%;
 }
 
 .header .profil {
@@ -61,7 +58,7 @@ body {
 	min-height: 74%;
 	height: 74%;
 	width: 13%;
-	margin-left: 25%;
+	margin-left: 23%;
 	margin-top: 0.50%;
 	margin-bottom: 0.50%;
 	font-size: x-large;
@@ -70,13 +67,14 @@ body {
 
 .header .profil a{
 	text-decoration: none;
-	color: #60767f;
+	color: #2D2E83;
+	font-family: "mv_boli";
 }
 
 .header .search {
-	background-color: white;
+	background-color: #2D2E83;
 	float: left;
-	margin-left: 28%;
+	margin-left: 24%;
 	margin-top: 0.50%;
 	min-height: 74%;
 	height: 74%;
@@ -91,6 +89,7 @@ body {
 	margin-top: 5%;
 	margin-left: 3%;
 	float: left;
+	color: white;
 }
 
 .header .search i:hover{
@@ -98,18 +97,25 @@ body {
 }
 
 .header .search input {
-	margin-top: 5%;
+	margin-top: 15px;
 	margin-left: 3%;
-	border: 0 white;
-	color: purple;
+	color: white;
 	opacity: 1.5;
-	font-weight: bold;
-	font-size: large;
+	font-size: x-large;
+	background-color: #2D2E83;
+	border: 0px;
+	font-family: "mv_boli";
 }
 
 .header .search input:focus {
 	outline: none;
 }
+
+.header .search input::placeholder {
+	color:white;
+	font-family: "mv_boli";
+}
+
 
 .header .profil img {
 	height: 50px;
@@ -136,7 +142,6 @@ input::-webkit-calendar-picker-indicator {
 	max-width: 640px;
 	width: 94%;
 	height:97%;
-	max-height:97%;
 	text-align: center;
 }
 
@@ -145,7 +150,6 @@ input::-webkit-calendar-picker-indicator {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 2rem;
-	background-color: #6f8a94;
+	padding: 30px;
 	text-align: center;
 }

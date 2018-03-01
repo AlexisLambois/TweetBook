@@ -1,1 +1,82 @@
 @charset "ISO-8859-1";
+
+@font-face {
+	font-family: "mv_boli";
+	src: url(/TweetBook/font/mvboli.ttf);
+}
+
+.content .profil ul {
+	width: 100%;
+	padding: 0;
+}
+
+.content .profil ul li {
+	height: 100px;
+	width: 100%;
+	background-color: #5FA9DD;
+	border: 5px #2D2E83 solid;
+	border-radius: 10px;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.content .profil ul li table {
+	width: 100%;
+	height: 100%;
+}
+
+.content .profil ul li table tr {
+	width: 100%;
+	height: 100%;
+	font-family: "mv_boli";
+}
+
+.content .profil ul li table tr th {
+	width: 30%;
+	height: 100%;
+	font-size: large;
+}
+
+.content .profil ul li table tr td {
+	overflow: auto;
+	font-size: 20px;
+}
+
+.content .profil ul li table tr td a {
+	text-decoration: none;
+	color: #2D2E83;
+}
+
+.content .profil ul li table tr td a:hover {
+	zoom: 105%;
+}
+
+.content .profil form input[type=submit] {
+	background-color: red;
+	color: white;
+	font-family: "mv_boli";
+	height: 50px;
+	width: 300px;
+	font-size: large;
+}
+
+.content .profil form input[type=submit]:hover {
+	zoom: 110%;
+	cursor: pointer;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.content .profil .modification {
+	position: fixed;
+	right: 30px;
+	padding: 30px;
+	top: 50%;
+}
+
+.ui-datepicker { 
+  margin-top: -120px;
+}
+

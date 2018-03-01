@@ -45,6 +45,7 @@ CREATE TABLE liked(
  	CONSTRAINT FK_actualite FOREIGN KEY (actualite) REFERENCES actualite(ano)
 );
 
+--INSERT INTO comptes(login,password,naissance,nom,prenom,email,photo) VALUES('toto','123',TO_DATE('01/01/0001', 'DD/MM/YYYY'),'Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
 INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
 INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Phillipe','Mathieu','test1');
 INSERT INTO comptes(login,password,nom,prenom,email,role) VALUES('tata','123','Hauspie','Michael','test2','invite');

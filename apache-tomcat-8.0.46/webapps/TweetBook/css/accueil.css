@@ -1,18 +1,27 @@
 @CHARSET "UTF-8";
 
+@font-face {
+        font-family: "mv_boli";
+        src: url(/TweetBook/font/mvboli.ttf);
+}
+
 .content form>input[type=text]{
 	width: 400px;
 	border-radius:20px;
 	height: 60px;
 	padding-left: 10px;
-	border:2px black solid;
+	border:5px #2D2E83 solid;
+	font-family: "mv_boli";
+	font-size: large;
 }
 .content form>input[type=submit]{
 	width: 100px;
 	border-radius:20px;
 	height: 30px;
-	border:2px black solid;
+	background-color:white;
+	border:3px #2D2E83 solid;
 	margin-left: 10px;
+	font-weight: bold;
 }
 
 .content form>input[type=submit]:hover{
@@ -28,7 +37,7 @@
 
 .content li{
 	border: 2px black solid;
- 	background-color: #cfd8dc; 
+ 	background-color: #5FA9DD; 
 	list-style: none;
 	margin-top: 20px;
 	height: 300px;
@@ -46,7 +55,7 @@
 
 .entete_act{
 	width: 800px;
-	background-color: #60767f;
+	background-color: #2D2E83;
 }
 
 .entete_act th{
@@ -63,7 +72,7 @@
 	font-family: 'Indie Flower', cursive;
 	font-style: normal;
 	text-decoration: none;
-	color: yellow;
+	color: white;
 }
 
 .entete_act a:hover{
@@ -82,7 +91,9 @@
 	margin-bottom: 5px;
 	overflow: auto;
 	width: 94%;
-	font-size: large;
+	font-size: 25px;
+	color: white;
+	font-family: "mv_boli";
 }
 
 .corps_act span{
@@ -101,12 +112,12 @@
 }
 
 #valide{
-	color:red;
+	color:#176A9C;
 }
 
 .corps_act a{
 	text-decoration: none;
-	color:  #60767f;
+	color:  #2D2E83;
 	font-family: 'Indie Flower', cursive;
 	font-size: x-large;
 	font-weight: bold;
