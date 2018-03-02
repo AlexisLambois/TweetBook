@@ -14,18 +14,24 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <div class="content">
 		<div class="profil">
-		${user_search.afficheVisiteur()}
+			<c:choose>
+	   			<c:when test="${user.getLogin().equals(user_search.getLogin())}">
+	   				${user_search.afficheVisiteur(0)}
+	   			</c:when>
+	    		<c:otherwise>
+	    			${user_search.afficheVisiteur(1)}
+	    		</c:otherwise>
+			</c:choose>
+		
 		<c:if test="${!user.verifier_amitie(user_search)}">
 			<form action="${pageContext.request.contextPath}/servlet/insert_amis">
 				<input type="hidden" value="${user_search.getLogin()}" name="hidden"/>
 				<input type="submit" value="Ajouter comme Amis !!!"/>
 			</form>
 		</c:if>
-		<div class="modification" hidden>
+		<div class="modification" style="visibility:hidden;">
 			<c:if test="${user.getLogin().equals(user_search.getLogin())}">
-				<form action="${pageContext.request.contextPath}/servlet/update_profil">
-					<input type="submit" value="Enregistrer les modifcations !!"/>
-				</form>
+				<input type="submit" onclick="modif_user()" value="Enregistrer les modifcations !!"/>
 			</c:if>
 		</div>
 	</div>

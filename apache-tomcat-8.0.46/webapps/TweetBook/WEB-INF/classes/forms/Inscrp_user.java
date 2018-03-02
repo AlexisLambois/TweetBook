@@ -32,8 +32,9 @@ public class Inscrp_user extends HttpServlet {
 			ds = (DataSource) envCtx.lookup("da2i");
 			con = ds.getConnection();
 			
-			pst =(PreparedStatement) con.prepareStatement("SELECT login FROM comptes WHERE login=?"); 
+			pst =(PreparedStatement) con.prepareStatement("SELECT login FROM comptes WHERE login=? OR email=?"); 
 			pst.setString(1, req.getParameter("login"));
+			pst.setString(2, req.getParameter("email"));
 			rs = pst.executeQuery();
 			
 			if (rs.next()) {

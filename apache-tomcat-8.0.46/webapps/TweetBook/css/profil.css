@@ -76,7 +76,15 @@
 	top: 50%;
 }
 
-.ui-datepicker { 
-  margin-top: -120px;
+.content .profil .modification input {
+	background-color: red;
+	color: white;
+	font-family: "mv_boli";
+	height: 50px;
+	width: 300px;
+	font-size: large;
 }
 
+.ui-datepicker {
+	margin-top: -120px;
+}

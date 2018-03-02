@@ -43,7 +43,7 @@
 	<security-constraint>
     	<web-resource-collection>
         	<web-resource-name>SecuredBookSite</web-resource-name>
-        	<url-pattern>/jsp/secured43/*</url-pattern>
+        	<url-pattern>/jsp/secured/*</url-pattern>
 		</web-resource-collection>
 		 <auth-constraint>
          <role-name>client</role-name>

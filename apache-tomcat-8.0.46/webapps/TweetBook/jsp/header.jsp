@@ -14,8 +14,7 @@
 <body>
 	<jsp:useBean id="user" scope="session" class="beans.User" />
 	<jsp:useBean id="sql_list_user" scope="page" class="beans.Sql_list_User" />
-	<%---user.init(request.getRemoteUser()); --%>
-	<% user.init("toto"); %>
+	<%user.init(request.getRemoteUser());%>
 	<% sql_list_user.init("login,prenom,nom", "comptes", 3); %>
 
 	<div class="header">
@@ -32,8 +31,20 @@
 		</div>
 		<div class="profil">
 			<a href="${pageContext.request.contextPath}/jsp/secured/profil.jsp?login_search=${user.getLogin()}" >
-			<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>${user.getLogin()}</p></td></tr></table>
-				<%--=request.getRemoteUser()--%>
+				<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>${user.getLogin()}</p></td><td><button type="button" onclick="deconnection()">Click Me!</button></td></tr></table>
 			</a>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function deconnection(){
+			$.ajax({
+		        type: 'POST',
+		        url: '/TweetBook/servlet/deconnection',
+		        error: function(response) {
+		        },
+		        success: function(response) {
+		        	location.reload();
+		        }
+		    });
+		}
+	</script>

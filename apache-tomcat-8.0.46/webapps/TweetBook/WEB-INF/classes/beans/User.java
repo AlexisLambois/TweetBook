@@ -152,7 +152,7 @@ public class User {
 		this.amis = amis;
 	}
 
-	public String afficheVisiteur(){
+	public String afficheVisiteur(int params ){
 
 		if( this.getVisibilite() == 2 ){
 			return "<h1>Profil BLoque</h1>";
@@ -163,16 +163,30 @@ public class User {
 		res+="<li><table><tr><th><span class=\"underline\">Login</span> :</th><td>"+this.login+"</td></tr></table></li>";
 		res+="<li><table><tr><th><span class=\"underline\">Nom</span> :</th><td>"+this.nom+"</td></tr></table></li>";
 		res+="<li><table><tr><th><span class=\"underline\">Prenom</span> :</th><td>"+this.prenom+"</td></tr></table></li>";
-		if( this.naissance == null ){
-			res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" ></td></tr></table></li>";
-		}else{
-			res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" value=\""+this.naissance+"\"></td></tr></table></li>";
-		}
-		res+="<li><table><tr><th><span class=\"underline\">Email</span> :</th><td><input onchange=show_form() type=\"email\" value=\""+this.email+"\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
-		if( this.photo == null ){
-			res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() type=\"url\" list=\"defaultURLs\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
-		}else{
-			res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() type=\"url\" list=\"defaultURLs\" value=\""+this.photo+"\"></td></tr></table></li>";
+		if( params == 0 ) {
+			if( this.naissance == null ){
+				res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" ></td></tr></table></li>";
+			}else{
+				res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td><input onchange=show_form() id=\"datepicker\" type=\"text\" value=\""+this.naissance+"\"></td></tr></table></li>";
+			}
+			res+="<li><table><tr><th><span class=\"underline\">Email</span> :</th><td><input onchange=show_form() id=\"email\" type=\"email\" value=\""+this.email+"\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
+			if( this.photo == null ){
+				res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() id=\"photo\" type=\"url\" list=\"defaultURLs\"><datalist id=\"defaultURLs\"><option value=\"http://vpnzine.com/wp-content/uploads/anonyme-en-ligne.jpg\"></datalist></td></tr></table></li>";
+			}else{
+				res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td><input onchange=show_form() id=\"photo\" type=\"url\" list=\"defaultURLs\" value=\""+this.photo+"\"></td></tr></table></li>";
+			}
+		}else {
+			if( this.naissance == null ){
+				res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td></td></tr></table></li>";
+			}else{
+				res+="<li><table><tr><th><span class=\"underline\">Naissance</span> :</th><td>"+this.naissance+"</td></tr></table></li>";
+			}
+			res+="<li><table><tr><th><span class=\"underline\">Email</span> :</th><td>"+this.email+"</td></tr></table></li>";
+			if( this.photo == null ){
+				res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td></td></tr></table></li>";
+			}else{
+				res+="<li><table><tr><th><span class=\"underline\">Photo</span> :</th><td>"+this.photo+"</td></tr></table></li>";
+			}
 		}
 		res+="<li><table><tr><th><span class=\"underline\">Amis avec</span> :</th><td>";
 
@@ -201,12 +215,6 @@ public class User {
 			pst.setString(1, this.login);
 			pst.setString(2, u.getLogin());
 			pst.setTimestamp(3, new Timestamp(System.currentTimeMillis()));
-			pst.executeUpdate();
-
-			pst =(PreparedStatement) con.getCon().prepareStatement("INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES(?,?,?);"); 
-			pst.setString(1, this.login+" est amis avec "+u.getLogin());
-			pst.setTimestamp(2, new Timestamp(System.currentTimeMillis()));
-			pst.setString(3,this.login);
 			pst.executeUpdate();
 
 			this.amis.put(u.getLogin(), new Timestamp(System.currentTimeMillis()));

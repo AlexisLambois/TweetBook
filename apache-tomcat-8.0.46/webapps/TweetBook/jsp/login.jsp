@@ -11,6 +11,17 @@
 </head>
 <body>
 	<div class="cotn_principal">
+		<h1>
+		<% if( request.getParameter("error") == (null) ){
+			out.print("Bienvenue");
+		}else if(request.getParameter("error").equals("0")){
+			out.print("Erreur Login/Email");
+		}else if(request.getParameter("error").equals("1")){
+			out.print("Erreur Password");
+		}else if(request.getParameter("error").equals("2")){
+			out.print("inscription Réussie");
+		}%>
+		</h1>
 		<div class="cont_centrar">
 
 			<div class="cont_login">
@@ -61,7 +72,7 @@
 							class="material-icons">&#xE5C4;</i></a>
 						<h2>LOGIN</h2>
 						<form method="POST" action="j_security_check">
-							<input type="text" placeholder="Email or Login" name="j_username"/>
+							<input type="text" placeholder="Login" name="j_username"/>
 							<input type="password" placeholder="Password" name="j_password"/>
 							<input type="submit" value="LOGIN" class="btn_login" />
 						</form>
@@ -71,16 +82,16 @@
 						<a href="#" onclick="ocultar_login_sign_up()"><i
 							class="material-icons">&#xE5C4;</i></a>
 						<h2>SIGN UP</h2>
-						<form action="./../servlet/inscrp_user">
+						<form action="${pageContext.request.contextPath}/servlet/inscrp_user">
 							<input type="email" autocomplete="on" placeholder="Email"
 								name="email" required /> <input type="text" autocomplete="on"
-								placeholder="Login" name="login" required /> <input type="text"
-								autocomplete="on" placeholder="User Name" name="name" required />
+								placeholder="Login" name="login" maxlength="20" required /> <input type="text"
+								autocomplete="on" placeholder="User Name" name="name" maxlength="20" required />
 							<input type="text" autocomplete="on" placeholder="User FirstName"
-								name="firstname" required /> <input type="password"
+								name="firstname" maxlength="20" required /> <input type="password"
 								autocomplete="on" placeholder="Password" name="password"
-								required /> <input type="password" autocomplete="on"
-								placeholder="Confirm Password" name="password2" required /> <input
+								minlength="5" required /> <input type="password" autocomplete="on"
+								placeholder="Confirm Password" name="password2" minlength="5" required /> <input
 								class="btn_sign_up" type="submit" value="SIGN UP" />
 						</form>
 					</div>

@@ -62,5 +62,3 @@ INSERT INTO liked VALUES('tata',1,0);
 INSERT INTO liked VALUES('toto',1,0);
 INSERT INTO liked VALUES('tata',2,0);
 INSERT INTO liked VALUES('toto',3,0);
-
-SELECT concat('<a href=\"',liker_par,'\">',liker_par,'</a>') FROM liked WHERE actualite=1;

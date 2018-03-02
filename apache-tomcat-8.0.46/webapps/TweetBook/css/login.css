@@ -27,11 +27,15 @@
 	/* IE6-9 fallback on horizontal gradient */
 }
 
+.cotn_principal h1{
+	margin-top: 100px;
+}
+
 .cont_centrar {
 	position: relative;
 	float: left;
 	width: 100%;
-	margin-top: 40vh; /* poussé de la moitié de hauteur de viewport */
+	margin-top: 32vh; /* poussé de la moitié de hauteur de viewport */
   	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
 }
 

@@ -57,7 +57,6 @@ public class Like_event extends HttpServlet{
 			}
 		}
 		
-		//res.sendRedirect(req.getContextPath()+"/jsp/secured/accueil.jsp");
 	}
 
 }
