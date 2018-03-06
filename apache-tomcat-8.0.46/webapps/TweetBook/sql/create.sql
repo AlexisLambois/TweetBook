@@ -44,20 +44,19 @@ CREATE TABLE liked(
  	CONSTRAINT FK_comptes FOREIGN KEY (liker_par) REFERENCES comptes(login),
  	CONSTRAINT FK_actualite FOREIGN KEY (actualite) REFERENCES actualite(ano)
 );
-
---INSERT INTO comptes(login,password,naissance,nom,prenom,email,photo) VALUES('toto','123',TO_DATE('01/01/0001', 'DD/MM/YYYY'),'Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
-INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
-INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Phillipe','Mathieu','test1');
+INSERT INTO comptes(login,password,naissance,nom,prenom,email,photo) VALUES('toto','123',TO_DATE('01/01/0001', 'DD/MM/YYYY'),'Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
+--INSERT INTO comptes(login,password,nom,prenom,email,photo) VALUES('toto','123','Phillipe','Mathieu','test','https://i.imgur.com/1eJ1q0V.jpg');
+INSERT INTO comptes(login,password,nom,prenom,email) VALUES('titi','123','Secq','Yann','test1');
 INSERT INTO comptes(login,password,nom,prenom,email,role) VALUES('tata','123','Hauspie','Michael','test2','invite');
 INSERT INTO comptes(login,password,nom,prenom,email) VALUES('tete','123','test','test','test3');
 INSERT INTO amis VALUES('toto','titi',CURRENT_TIMESTAMP);
 INSERT INTO amis VALUES('tete','tata',CURRENT_TIMESTAMP);
 INSERT INTO amis VALUES('titi','tata',CURRENT_TIMESTAMP);
 INSERT INTO amis VALUES('titi','alexis.lambois','20171015 15:00:00'::timestamp);
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Jadore les pizzas !',CURRENT_TIMESTAMP,'toto');
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Jaime les pommes',CURRENT_TIMESTAMP,'titi');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('J adore les pizzas !',CURRENT_TIMESTAMP,'toto');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('J aime les pommes',CURRENT_TIMESTAMP,'titi');
 INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je suis au toilette',CURRENT_TIMESTAMP,'titi');
-INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je mennuie','20171015 15:00:00'::timestamp,'tata');
+INSERT INTO actualite(contenu,date_ecriture,ecrit_par) VALUES('Je m ennuie','20171015 15:00:00'::timestamp,'tata');
 INSERT INTO liked VALUES('tata',1,0);
 INSERT INTO liked VALUES('toto',1,0);
 INSERT INTO liked VALUES('tata',2,0);

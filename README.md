@@ -38,3 +38,4 @@
 	-->	<param-value>jdbc:postgresql://psqlserv/da2i</param-value>
 	</context-param>
 
+### 5)Si vous utlisez POSTGRESQL !!! Lancez le script /TweetBook/sql/create.sql
