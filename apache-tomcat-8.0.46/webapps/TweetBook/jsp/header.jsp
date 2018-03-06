@@ -31,7 +31,7 @@
 		</div>
 		<div class="profil">
 			<a href="${pageContext.request.contextPath}/jsp/secured/profil.jsp?login_search=${user.getLogin()}" >
-				<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>${user.getLogin()}</p></td><td><button type="button" onclick="deconnection()">Click Me!</button></td></tr></table>
+				<table><tr><td><img alt="" src="${user.getPhoto()}" /></td><td><p>${user.getLogin()}</p></td><td><button type="button" onclick="deconnection()">Disconnect</button></td></tr></table>
 			</a>
 		</div>
 	</div>
