@@ -10,6 +10,8 @@
 
 ## 5) Les rêquetes AJAX
 
+## 6) Les prepareStatement
+
 # Les fonctionnalités 
 
 ## Connexion/Inscription avec login unique et email unique et sa gestion d'erreur

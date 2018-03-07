@@ -1,6 +1,19 @@
 <Context path="/TweetBook" privileged="true" reloadable="true" >
 <Manager pathname="" />
   
+  <!--Version IUT-->
+  <Resource name="da2i" 
+  	auth="Container" 
+  	type="javax.sql.DataSource"
+  	maxTotal="4" 
+  	maxIdle="4" 
+  	maxWaitMillis="3000"
+  	username="lamboisa" 
+  	password="moi" 
+  	driverClassName="org.postgresql.Driver"
+  	url="jdbc:postgresql://psqlserv/da2i" /> 
+  	
+  <!--Version Windows-->
   <!--<Resource name="da2i" 
   	auth="Container" 
   	type="javax.sql.DataSource"
@@ -10,19 +23,7 @@
   	username="lamboisa" 
   	password="moi" 
   	driverClassName="org.postgresql.Driver"
-  	url="jdbc:postgresql://psqlserv/da2i" /> -->
-  	
-  <!--Version Windows-->
-    <Resource name="da2i" 
-  	auth="Container" 
-  	type="javax.sql.DataSource"
-  	maxTotal="4" 
-  	maxIdle="4" 
-  	maxWaitMillis="3000"
-  	username="lamboisa" 
-  	password="moi" 
-  	driverClassName="org.postgresql.Driver"
-  	url="jdbc:postgresql://localhost/da2i" /> 
+  	url="jdbc:postgresql://localhost/da2i" /> -->
 
   <!-- Definition du Realm via le pool -->
 
